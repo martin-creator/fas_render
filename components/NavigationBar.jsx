@@ -44,7 +44,7 @@ const NavigationBar = () => {
   const pathname = usePathname();
   return (
     <div>
-      <div className="flex justify-between mx-6 md:mx-0 md:justify-around mt-8">
+      <div className="flex justify-between mx-6 md:mx-0 md:justify-around mt-8 z-10">
         {/* logo */}
         <div>
           <Image
@@ -59,7 +59,7 @@ const NavigationBar = () => {
           {navLinks.map((link) => (
             <Link href={link.link} key={link.title}>
               <p
-                className={`text-tertiary font-normal text-sm text-animation-one ${
+                className={`text-tertiary font-normal text-sm 2xl:text-lg text-animation-one ${
                   pathname.includes(link.link) ? "active-navbar-link" : ""
                 }`}
               >
@@ -81,12 +81,14 @@ const NavigationBar = () => {
         )}
         {showNav && (
           <div
-            className={`flex flex-col w-[30%] md:hidden gap-4 text-tertiary z-10 `}
+            className={`flex flex-col w-[30%] absolute mobile-menu gap-4 text-tertiary md:static md:w-auto transition-all ${
+              showNav ? "left-0" : "-left-full"
+            }`}
           >
             <div>
               <IoCloseCircle
                 size={22}
-                className="absolute right-2 top-19"
+                className="absolute -left-10 top-4"
                 onClick={() => setShowNav(false)}
               />
             </div>
