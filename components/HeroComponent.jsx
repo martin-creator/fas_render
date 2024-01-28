@@ -13,14 +13,16 @@ const HeroComponent = () => {
       />
       <div className="absolute left-0 top-0 h-full w-full bg-primary opacity-90">
         <NavigationBar />
-        <div className="w-full h-full flex flex-col items-center mt-44 xl:mt-32">
-          <h2 className="uppercase text-tertiary text-6xl xl:text-[100px] font-extrabold text-center">
+        <div className="w-full h-full flex flex-col items-center mt-24 md:mt-32 xl:mt-16 2xl:mt-32">
+          {/* <div className="w-full h-full flex flex-col items-center mt-12 sm:mt-24 md:mt-32 xl:mt-24 2xl:mt-32"> */}
+          {/* <h2 className="uppercase text-tertiary text-3xl sm:xt-6xl md:text-[85px] xl:text-[100px] font-extrabold text-center"> */}
+          <h2 className="uppercase text-tertiary text-3xl sm:xt-6xl md:text-[85px] xl:text-[88px] 2xl:text-[100px] font-extrabold text-center">
             Future African
           </h2>
-          <h2 className="uppercase mt-2 text-tertiary text-6xl xl:text-[100px] font-extrabold">
+          <h2 className="uppercase mt-4 text-tertiary text-3xl sm:text-6xl md:text-[85px] xl:text-[88px] 2xl:text-[100px] font-extrabold">
             Scientist
           </h2>
-          <p className="text-base text-center my-8 xl:my-12 text-white xl:text-2xl">
+          <p className="text-center my-8 xl:my-12 text-white text-xl xl:text-2xl">
             Fostering the next generation of African scientists and engineers
           </p>
           <button className="border border-white px-6 py-4 uppercase rounded-md text-white text-base">
