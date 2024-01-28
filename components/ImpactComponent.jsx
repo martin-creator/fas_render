@@ -32,7 +32,7 @@ const ImpactComponent = () => {
         sequi et error, ad fugit explicabo voluptas corporis tenetur provident
         hic accusantium quisquam!
       </p>
-      <div className="w-full h-full mx-12 flex itemx-center justify-center gap-4 mt-8">
+      <div className="w-full h-full mx-12 flex flex-col md:flex-row items-center justify-center gap-4 mt-8">
         {impactCards.map((card, index) => (
           <ImpactCard key={index} Number={card.Number} Description={card.Description} />
         ))}        

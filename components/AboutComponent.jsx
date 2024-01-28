@@ -36,7 +36,7 @@ const AboutComponent = () => {
         sequi et error, ad fugit explicabo voluptas corporis tenetur provident
         hic accusantium quisquam!
       </p>
-      <div className="w-full h-full mx-12 flex itemx-center justify-center gap-4 mt-8">
+      <div className="w-full h-full md:mx-12 flex items-center justify-center flex-col lg:flex-row gap-4 mt-8">
         {/* Cards */}
         {aboutCards.map((card, index) => (
           <AboutCard
