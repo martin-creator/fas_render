@@ -1,8 +1,8 @@
 import AboutComponent from '@/components/AboutComponent'
 import HeroComponent from '@/components/HeroComponent'
 import ImpactComponent from '@/components/ImpactComponent';
+import PartnersComponent from '@/components/PartnersComponent';
 import ProgramsComponent from '@/components/ProgramsComponent';
-import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
       <AboutComponent />
       <ImpactComponent />
       <ProgramsComponent />
+      <PartnersComponent/>
     </main>
   );
 }

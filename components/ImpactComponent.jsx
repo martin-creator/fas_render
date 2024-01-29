@@ -22,7 +22,7 @@ const ImpactComponent = () => {
     },
   ];
   return (
-    <div className="bg-primary w-full py-16 flex flex-col items-center justify-cente">
+    <div className="bg-primary w-full py-16 flex flex-col items-center justify-center">
       <SectionHeading Title="Our Impact" Bg="dark" />
       <p className="text-center w-1/2 mt-4 text-dimGray">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
