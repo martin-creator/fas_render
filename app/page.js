@@ -1,4 +1,6 @@
 import AboutComponent from '@/components/AboutComponent'
+import CTAComponent from '@/components/CTAComponent';
+import Footer from '@/components/Footer';
 import HeroComponent from '@/components/HeroComponent'
 import ImpactComponent from '@/components/ImpactComponent';
 import PartnersComponent from '@/components/PartnersComponent';
@@ -14,6 +16,8 @@ export default function Home() {
       <ProgramsComponent />
       <PartnersComponent/>
       <TestimonialsComponent/>
+      <CTAComponent/>
+      <Footer/>
     </main>
   );
 }

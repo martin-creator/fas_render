@@ -6,7 +6,7 @@ const PrimaryButton = ({ Title, ClickFunction }) => {
       onClick={() => {
         ClickFunction;
       }}
-      className="bg-tertiary w-full md:w-1/2 rounded-md px-8 py-2 text-white font-medium shadow-md hover:bg-transparent hover:text-tertiary border border-tertiary hover:scale-110 transition duration-300 ease-in-out"
+      className="bg-tertiary w-full md:w-1/2 rounded-md px-8 py-2 text-white font-medium shadow-md hover:bg-transparent hover:text-primary hover:border-primary border border-tertiary hover:scale-110 transition duration-300 ease-in-out"
     >
       {Title}
     </button>
