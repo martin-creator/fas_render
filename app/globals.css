@@ -42,3 +42,7 @@
   transition: transform 0.3s ease-in-out;
   /* Slide in from the right */
 }
+
+.bgStyle:nth-child(odd){
+  background-color: #F1F6FA;
+}

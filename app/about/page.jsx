@@ -1,30 +1,80 @@
+"use client";
 import Footer from "@/components/Footer";
 import NavigationBar from "@/components/NavigationBar";
 import SectionHeading from "@/components/SectionHeading";
 import Image from "next/image";
 import React from "react";
 import aboutUs from "../../public/aboutImg.png";
+import support from "../../public/support.png";
+import {
+  FaUserDoctor,
+  FaBriefcase,
+  FaListCheck,
+  FaUsers,
+  FaBookOpen,
+  FaHandshakeSimple,
+} from "react-icons/fa6";
+import { BiSolidBusiness } from "react-icons/bi";
+import { ImLab } from "react-icons/im";
+import { BsShieldFillCheck } from "react-icons/bs";
+import PrimaryButton from "@/components/PrimaryButton";
 const about = () => {
   let impactStatements = [
     {
-      figure: "10000",
-      description:
-        "Globally competitive career scientists trained.",
+      figure: "10,000",
+      description: "Globally competitive career scientists trained.",
+      icon: <FaUserDoctor size={30} />,
     },
     {
       figure: "50",
       description:
-        "We will have provided 50 fellowships to African early-career scientists.",
+        "general purpose laboratories established across 12 African countries",
+      icon: <ImLab size={30} />,
     },
     {
-      figure: "Research Projects",
+      figure: "30,000",
       description:
-        "We will have supported 100 impactful research projects in Africa.",
+        "New jobs, internships and fellowiship opportunities created for scientists in Africa.",
+      icon: <FaBriefcase size={30} />,
     },
     {
-      figure: "Innovative Projects",
+      figure: "100",
       description:
-        "We will have supported 50 innovative projects led by African early-career scientists.",
+        "Scientific enterprises created by our trainees solving local and global problems.",
+      icon: <BiSolidBusiness size={30} />,
+    },
+  ];
+
+  let coreValues = [
+    {
+      value: "Integrity",
+      description:
+        "We uphold the highest standards of professionalism, communicate openly, and always act in the best interest of our organization and community",
+      icon: <BsShieldFillCheck size={30} />,
+    },
+    {
+      value: "Accountability",
+      description:
+        "We take ownership of our responsibilities, embrace feedback, and learn from our mistakes to deliver exceptional results.",
+      icon: <FaListCheck size={30} />,
+    },
+    {
+      value: "Teamwork",
+      description:
+        "We trust and support each other, leveraging our strengths to overcome challenges and achieve our goals through collaboration.",
+      icon: <FaUsers size={30} />,
+    },
+    {
+      value: "Lifelong Learning",
+      description:
+        "We value curiosity, continuous learning, and development, recognizing their importance in staying ahead in the ever-evolving field of scientific research.",
+      icon: <FaBookOpen size={30} />,
+    },
+    {
+      value: "Commitment",
+      description:
+        "We are deeply committed to our mission, showing unwavering dedication, enthusiasm, and determination to impact the world positively through our work at FAS",
+      icon: <FaHandshakeSimple size={30} />,
     },
   ];
   return (
@@ -38,7 +88,7 @@ const about = () => {
         </div>
       </div>
       {/* Our Story Section */}
-      <div className="flex flex-col items-center py-8">
+      <div className="flex flex-col items-center pt-8">
         <SectionHeading Title={"Our Story"} Bg="light" className="" />
         <p className="py-8 px-16 md:px-32 text-center text-darkerGray">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis
@@ -86,14 +136,80 @@ const about = () => {
           </div>
         </div>
 
-        <div className="bg-secondary py-4 w-full flex flex-col items-center mt-8">
+        <div className="bg-secondary pt-8 pb-12 w-full flex flex-col items-center mt-8">
           <SectionHeading Title={"Impact by 2032"} Bg="light" />
           <p className="py-4 text-darkerGray w-1/2 text-center">
             We aim to achieve the following impact by 2032:
           </p>
+          {/* impact  */}
+          <div className="bg-white grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 rounded-md overflow-hidden mx-12">
+            {impactStatements.map((statement) => (
+              <div
+                className="bgStyle col-span-1 p-4 flex flex-col items-center justify-center"
+                key={statement.figure}
+              >
+                <p className="font-bold text-2xl text-primary flex gap-2 flex-col items-center">
+                  {statement.icon}
+                  {statement.figure}
+                </p>
+                <p className="text-darkerGray text-center text-sm mt-2">
+                  {statement.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* core values */}
+        <div className="bg-primary pt-8 pb-12 w-full px-8">
+          <div className="w-full text-center pb-4">
+            <SectionHeading Title={"Our Core Values"} />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            {coreValues.map((valueItem) => (
+              <div
+                className="col-span-1 flex flex-col items-center md:items-start"
+                key={valueItem.value}
+              >
+                <div className="text-tertiary bg-white h-12 w-12 rounded-full flex items-center justify-center">
+                  {valueItem.icon}
+                </div>
+                <p className="text-tertiary text-center md:text-left font-bold mt-4">
+                  {valueItem.value}
+                </p>
+                <p className="text-lightGray text-center md:text-left mt-2">
+                  {valueItem.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+        {/* Support */}
+        <div className="bg-backgroundLight w-full px-8">
+          <div className="w-full text-center mt-12 pb-4">
+            <SectionHeading Title={"Want to Support Our Mission?"} Bg="light" />
+          </div>
+          <div className="flex flex-col-reverse md:grid grid-cols-2 gap-4">
+            <div className="col-span-1 flex flex-col items-center justify-center">
+              <p className="text-darkerGray w-[80%] text-center mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+                voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. A, voluptatum.
+              </p>
+              <div className="w-1/2 md:w-full flex items-center justify-center mb-16 md:mb-0">
+                <PrimaryButton Title="Contact Us" />
+              </div>
+            </div>
+            <div className="col-span-1  flex items-center justify-center mb-8">
+              <Image
+                className="w-[400px]"
+                src={support}
+                alt="Radial support image"
+              />
+            </div>
+          </div>
         </div>
       </div>
-
       <Footer />
     </div>
   );

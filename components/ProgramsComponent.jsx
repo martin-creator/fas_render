@@ -52,7 +52,7 @@ const ProgramsComponent = () => {
             Mentorship
           </h5>
           <div className="bg-secondary w-32 h-1 rounded-md mt-2" />
-          <p className="text-left  text-dimGray mt-8 mb-12">
+          <p className="text-left  text-darkerGray mt-8 mb-12">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
             aliquam. Beatae dignissimos voluptate suscipit maiores aliquam dolor
             asperiores atque quo amet qui libero magni, nemo exercitationem
