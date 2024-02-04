@@ -28,7 +28,7 @@ const AboutComponent = () => {
   return (
     <div className="flex flex-col items-center justify-center pt-8 pb-16">
       <SectionHeading Title="About Us" Bg="light"/>
-      <p className="text-center w-1/2 mt-4 text-dimGray">
+      <p className="text-center w-[80%] md:w-1/2 mt-4 text-dimGray">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
         aliquam. Beatae dignissimos voluptate suscipit maiores aliquam dolor
         asperiores atque quo amet qui libero magni, nemo exercitationem ipsam,

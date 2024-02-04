@@ -8,11 +8,11 @@ const ProgramsComponent = () => {
   return (
     <div className="flex flex-col items-center justify-center pt-8 pb-16">
       <SectionHeading Bg="light" Title="Our Programs" />
-      <p className="text-center w-1/2 mt-4 text-dimGray">
+      <p className="text-center w-[80%] md:w-1/2 mt-4 text-dimGray">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
         aliquam.
       </p>
-      <div className="mx-28 my-16 flex justify-center items-center flex-col md:grid md:grid-cols-2 gap-8">
+      <div className="mx-16 md:mx-28 my-16 flex justify-center items-center flex-col md:grid md:grid-cols-2 gap-8">
         <div className="col-span-1 flex justify-center flex-col">
           <h5 className="text-primary text-2xl font-bold flex-nowrap w-full">
             Science Research Academy
@@ -37,7 +37,7 @@ const ProgramsComponent = () => {
         </div>
       </div>
       {/* second */}
-      <div className="mx-28 my-8 flex flex-col-reverse justify-center items-center md:flex-col md:grid md:grid-cols-2 gap-8">
+      <div className="mx-16 md:mx-28 my-8 flex flex-col-reverse justify-center items-center md:flex-col md:grid md:grid-cols-2 gap-8">
         {/* image */}
         <div className="col-span-1">
           <Image

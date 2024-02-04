@@ -50,7 +50,7 @@ const TestimonialsComponent = () => {
       </p>
       {/*testimonials  */}
       <div>
-        <div className="flex justify-center items-center flex-col md:grid md:grid-cols-3 gap-8 mt-16 px-16">
+        <div className="flex justify-center items-center flex-col lg:grid lg:grid-cols-3 gap-8 mt-16 px-16">
           {/* <Slider {...settings}> */}
             {testimonials.map((testimonial, index) => (
               <div

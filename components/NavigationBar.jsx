@@ -6,7 +6,7 @@ import Link from "next/link";
 import { BsInstagram } from "react-icons/bs";
 import { RiTwitterXLine } from "react-icons/ri";
 import { IoMenu, IoCloseCircle } from "react-icons/io5";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 const NavigationBar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -42,13 +42,14 @@ const NavigationBar = () => {
   ];
 
   const pathname = usePathname();
+  console.log("pathname",pathname);
   return (
-    <div>
-      <div className="flex justify-between mx-6 md:mx-0 md:justify-around mt-8 z-10">
+    <div className="sticky top-0 left-0 z-20">
+      <div className="flex bg-primary bg-opacity-90 px-4 py-2 md:px-0 md:py-0 justify-between items-center md:mx-0 md:justify-around z-10">
         {/* logo */}
         <div>
           <Image
-            height={150}
+            height={100}
             src={LogoLong}
             alt="Future African Scientist Logo"
           />
@@ -81,8 +82,8 @@ const NavigationBar = () => {
         )}
         {showNav && (
           <div
-            className={`flex flex-col w-[30%] absolute mobile-menu gap-4 text-tertiary md:static md:w-auto transition-all ${
-              showNav ? "left-0" : "-left-full"
+            className={`flex flex-col w-[50%] h-full  p-4 bg-primary opacity-90 absolute mobile-menu gap-4 text-tertiary md:static md:w-auto transition-all ${
+              showNav ? "left-0" : "-left-ful.l"
             }`}
           >
             <div>
@@ -96,7 +97,7 @@ const NavigationBar = () => {
               <Link href={link.link} key={link.title}>
                 <p
                   className={`text-tertiary font-normal text-sm text-animation-one ${
-                    pathname.includes(link.link) ? "active-navbar-link" : ""
+                    pathname.startsWith(link.link) ? "active-navbar-link" : ""
                   }`}
                 >
                   {link.title}

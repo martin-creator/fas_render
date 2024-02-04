@@ -13,7 +13,7 @@ const PartnersComponent = () => {
   return (
     <div className="bg-primary w-full pt-12 flex flex-col items-center justify-center">
       <SectionHeading Title="Our Partners" Bg="dark" />
-      <p className="text-center w-1/2 mt-4 text-dimGray pb-8">
+      <p className="text-center w-[80%] md:w-1/2 mt-4 text-dimGray pb-8">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
         aliquam. Beatae dignissimos voluptate suscipit maiores aliquam dolor
         asperiores atque quo amet qui libero magni, nemo exercitationem ipsam,
