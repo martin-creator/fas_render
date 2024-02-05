@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import LogoLong from "../public/FAS1.png";
 import Link from "next/link";
@@ -42,10 +42,35 @@ const NavigationBar = () => {
   ];
 
   const pathname = usePathname();
-  console.log("pathname",pathname);
+  // console.log("pathname", pathname);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const threshold = 200; // Adjust this value as needed
+      const scrollY = window.scrollY;
+
+      if (scrollY >= threshold && !isSticky) {
+        setIsSticky(true);
+      } else if (scrollY < threshold && isSticky) {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isSticky]);
+// bg-primary bg-opacity-90
   return (
-    <div className="sticky top-0 left-0 z-20">
-      <div className="flex bg-primary bg-opacity-90 px-4 py-2 md:px-0 md:py-0 justify-between items-center md:mx-0 md:justify-around z-10">
+    <div className={`sticky top-0 left-0 z-20 `}>
+      <div
+        className={`flex  px-4 py-2 md:px-0 md:py-0 justify-between items-center md:mx-0 md:justify-around z-10 transition ${
+          isSticky ? "bg-primary bg-opacity-90" : "bg-transparent"
+        } `}
+      >
         {/* logo */}
         <div>
           <Image
@@ -82,8 +107,8 @@ const NavigationBar = () => {
         )}
         {showNav && (
           <div
-            className={`flex flex-col w-[50%] h-full  p-4 bg-primary opacity-90 absolute mobile-menu gap-4 text-tertiary md:static md:w-auto transition-all ${
-              showNav ? "left-0" : "-left-ful.l"
+            className={`flex flex-col w-[50%] h-full p-4 bg-primary opacity-90 absolute mobile-menu gap-4 text-tertiary md:static md:w-auto transition-all ${
+              showNav ? "-left-20" : "-left-full"
             }`}
           >
             <div>

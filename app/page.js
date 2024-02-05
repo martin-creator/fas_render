@@ -10,16 +10,18 @@ import TestimonialsComponent from "@/components/TestimonialsComponent";
 
 export default function Home() {
   return (
-    <main className="bg-backgroundLight">
+    <main className="bg-backgroundLight relative">
       <NavigationBar />
       <HeroComponent />
-      <AboutComponent />
-      <ImpactComponent />
-      <ProgramsComponent />
-      <PartnersComponent />
-      <TestimonialsComponent />
-      <CTAComponent />
-      <Footer />
+      <div className="mt-[500px]">
+        <AboutComponent />
+        <ImpactComponent />
+        <ProgramsComponent />
+        <PartnersComponent />
+        <TestimonialsComponent />
+        <CTAComponent />
+        <Footer />
+      </div>
     </main>
   );
 }
