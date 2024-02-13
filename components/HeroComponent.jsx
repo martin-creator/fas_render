@@ -14,7 +14,8 @@ const HeroComponent = () => {
       <div className="absolute left-0 top-0 h-screen w-full bg-primary opacity-90">
         {/* <div className="absolute left-0 top-0 h-full w-full mt-[116px] md:mt-[100px] pt-36 bg-primary opacity-90"> */}
         {/* <NavigationBar /> */}
-        <div className="w-full h-full flex flex-col items-center mt-48 md:mt-48 2xl:mt-32">
+        <div className="w-full h-full flex flex-col items-center justify-center mt-8">
+        {/* <div className="w-full h-full flex flex-col items-center justify-center mt-48 md:mt-48 2xl:mt-32"> */}
           {/* <div className="w-full h-full flex flex-col items-center mt-12 sm:mt-24 md:mt-32 xl:mt-24 2xl:mt-32"> */}
           {/* <h2 className="uppercase text-tertiary text-3xl sm:xt-6xl md:text-[85px] xl:text-[100px] font-extrabold text-center"> */}
           <h2 className="uppercase text-tertiary text-4xl sm:text-6xl md:text-[70px] xl:text-[88px] 2xl:text-[100px] font-extrabold text-center">

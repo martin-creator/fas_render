@@ -74,7 +74,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='border-t border-t-lightGray flex justify-center p-6'>
-        <p className='text-lightGray text-sm'>Future African Scientist © 2023 All Rights Reserved</p>
+        <p className='text-lightGray text-sm'>Future African Scientist © 2024 All Rights Reserved</p>
       </div>
     </div>
   );
