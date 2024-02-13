@@ -6,12 +6,21 @@ import SectionHeading from "@/components/SectionHeading";
 import React from "react";
 import { useState } from "react";
 import { BsGraphUpArrow } from "react-icons/bs";
-import { FaKey, FaBusinessTime, FaMoneyBills } from "react-icons/fa6";
+import {
+  FaKey,
+  FaBusinessTime,
+  FaMoneyBills,
+  FaPeopleGroup,
+  FaHandshake,
+} from "react-icons/fa6";
 import { LuBrainCircuit } from "react-icons/lu";
 import { GiArchiveResearch } from "react-icons/gi";
-import { FaTools } from "react-icons/fa";
+import { FaCalendarAlt, FaTools } from "react-icons/fa";
 import CTAComponent from "@/components/CTAComponent";
 import Footer from "@/components/Footer";
+import Image from "next/image";
+import mentorship from "../../public/mentorship.jpg";
+import { IoBriefcase } from "react-icons/io5";
 const Programs = () => {
   const [tabState, setTabState] = useState("research");
 
@@ -43,28 +52,28 @@ const Programs = () => {
   ];
   const whyCardsMentorship = [
     {
-      Icon: <LuBrainCircuit size={30} />,
-      Title: "Become a Scientist",
+      Icon: <IoBriefcase size={30} />,
+      Title: "Career Guidance and Support",
       Description:
-        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.",
+        "Get personalized career guidance and support from experienced scientists and professionals in your field of interest",
     },
     {
-      Icon: <BsGraphUpArrow size={30} />,
-      Title: "Improve your Research Skills",
+      Icon: <FaHandshake size={30} />,
+      Title: "Virtual Mentorship Parleys",
       Description:
-        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.",
+        "Engage in personalized, one-on-one virtual sessions in breakout rooms  with your mentors",
     },
     {
-      Icon: <FaKey size={30} />,
-      Title: "Unlock the Key to success",
+      Icon: <FaCalendarAlt size={30} />,
+      Title: "Quarterly Country Meetups",
       Description:
-        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.",
+        "Connect with peers and scientists in your country through regular in-person gatherings. ",
     },
     {
-      Icon: <FaKey size={30} />,
-      Title: "Unlock the Key to success",
+      Icon: <FaPeopleGroup size={30} />,
+      Title: "Group Challenge Projects",
       Description:
-        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.",
+        "Collaborate with fellow mentees on challenging scientific projects that provide hands-on experience",
     },
   ];
 
@@ -96,6 +105,37 @@ const Programs = () => {
       Duration: "3 Months",
       Content:
         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quaeab illo inventore. Donec tincidunt tempor.",
+    },
+  ];
+
+  const programTimelineItemsMentorship = [
+    {
+      Icon: <GiArchiveResearch size={24} />,
+      Title: "Application and Selection",
+      Duration: "3 Months",
+      Content:
+        "Both Mentors and mentees submit their application to join the program. The applications are reviewed and successful applicants are selected to join the program.",
+    },
+    {
+      Icon: <FaTools size={24} />,
+      Title: "AI Matching",
+      Duration: "3 Months",
+      Content:
+        "Mentors and mentees are matched based on their interests, expertise, and availability. The matching is done using an AI algorithm that ensures the best possible match.",
+    },
+    {
+      Icon: <FaCalendarAlt size={24} />,
+      Title: "Virtual Sessions Commence",
+      Duration: "3 Months",
+      Content:
+        " The program commences with virtual sessions between mentors and mentees. The sessions are held weekly and are designed to provide guidance and support to the mentees.",
+    },
+    {
+      Icon: <FaBusinessTime size={24} />,
+      Title: "Meetups and Projects",
+      Duration: "3 Months",
+      Content:
+        " The program also includes quarterly in-person meetups and group projects that provide hands-on experience to the mentees.",
     },
   ];
   const eligibilityCriteria = [
@@ -145,7 +185,7 @@ const Programs = () => {
               tabState === "mentorship" ? "font-bold underline" : ""
             }`}
           >
-            Mentorship Academy
+            Mentorship Program
           </button>
         </div>
       </div>
@@ -165,6 +205,11 @@ const Programs = () => {
                 quae ab illo inventore veritatis et quasi architecto beatae
                 vitae dicta sunt explicabo.
               </p>
+              <Image
+                src={mentorship}
+                className="rounded-md mt-8"
+                alt="Image of student working in a lab"
+              />
             </div>
             <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 grid-rows-2 w-full gap-8  py-16 px-16">
               {whyCardsResearchAcademy.map((card, index) => (
@@ -250,17 +295,21 @@ const Programs = () => {
 
       {tabState === "mentorship" && (
         <div>
-          <div className="grid grid-cols-1 md:grid-cols-2 bg-backgroundLight w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 bg-backgroundLight w-full">
             <div className="col-span-1 flex flex-col justify-center md:w-[95%] mb-8 md:mb-0  p-16 ">
               <h3 className="text-2xl font-bold text-primary mb-12">
                 Why Join the Mentorship Program?
               </h3>
               <p className="text-darkerGray">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo.
+                We facilitate the growth of emerging scientists in Africa by
+                connecting them with seasoned experts who provide invaluable
+                guidance and mentorship in their scientific journeys
               </p>
+              <Image
+                src={mentorship}
+                className="rounded-md mt-8"
+                alt="Image of student working in a lab"
+              />
             </div>
             <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 grid-rows-2 w-full gap-8 p-16">
               {whyCardsMentorship.map((card, index) => (
@@ -272,6 +321,39 @@ const Programs = () => {
                 />
               ))}
             </div>
+          </div>
+          {/* program timeline */}
+          <div className="bg-primary w-full p-8 flex flex-col items-center justify-center ">
+            <SectionHeading Title="How the Program works" Bg="dark" />
+            <p className="text-center w-1/2 mt-4 mb-12 text-dimGray">
+              We develop and teach both mentors and mentees a set of best
+              practices to ensure successful career advancement.
+            </p>
+            {/* timeline */}
+            <ol className="items-center sm:flex">
+              {programTimelineItemsMentorship.map((item, index) => (
+                <li key={index} className="relative mb-6 sm:mb-0">
+                  <div className="flex items-center">
+                    <div className="z-10 *:flex items-center justify-center w-10 h-10 md:w-6 md:h-6 bg-secondary rounded-full ring-0 ring-secondary dark:tertiary sm:ring-8 dark:tertiary shrink-0 text-primary">
+                      {item.Icon}
+                    </div>
+                    {/* <div className="hidden sm:flex w-full bg-backgroundLight h-0.5  dark:bg-gray-700"></div> */}
+                    <div className="hidden xl:flex w-full border-t border-dimGray border-dashed h-0.5  dark:bg-gray-700"></div>
+                  </div>
+                  <div className="mt-6 sm:pe-8">
+                    <h3 className="text-lg font-semibold text-white">
+                      {item.Title}
+                    </h3>
+                    <time className="block my-4 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                      Duration: {item.Duration}
+                    </time>
+                    <p className="text-sm font-normal mt-2 text-lightGray dark:text-gray-400">
+                      {item.Content}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ol>
           </div>
           {/* Eligibility Criteria */}
           <div className="w-full backgroundLight flex flex-col items-center justify-center py-8">
