@@ -289,7 +289,6 @@ const Programs = () => {
             ButtonTitle={"Apply"}
             Message="Fill this form and someone from our team will contact you within 24 hours. , nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum.”  "
           />
-          <Footer />
         </div>
       )}
 
@@ -383,9 +382,9 @@ const Programs = () => {
             ButtonTitle={"Apply"}
             Message="Fill this form and someone from our team will contact you within 24 hours. , nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum.”  "
           />
-          <Footer />
         </div>
       )}
+      <Footer />
     </div>
   );
 };

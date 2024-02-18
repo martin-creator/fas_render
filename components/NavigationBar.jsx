@@ -24,7 +24,7 @@ const NavigationBar = () => {
       link: "/team",
     },
     {
-      title: "Our Program",
+      title: "Our Programs",
       link: "/programs",
     },
     {
