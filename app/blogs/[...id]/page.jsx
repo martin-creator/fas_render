@@ -4,7 +4,7 @@ import React from "react";
 import { useParams } from "next/navigation";
 import { blogs } from "../../../data/data";
 import blogImage from "../../../public/blogImg.jpg";
-
+import { IoPricetags } from "react-icons/io5";
 import { FaCalendarDay, FaUser } from "react-icons/fa";
 import Image from "next/image";
 const IndividualBlogPage = () => {
@@ -47,16 +47,21 @@ const IndividualBlogPage = () => {
         />
 
         <div className="mt-8 w-[80%] text-darkerGray">{blogData.content}</div>
-
-        <div className="mt-8">
-          {blogData.tags.map((tag, index) => (
-            <span
-              key={index}
-              className="text-xs border rounded-md border-lightGray border-opacity-40 text-tertiary font-bold px-2 py-1 mr-2"
-            >
-              {tag}
-            </span>
-          ))}
+        <div className="flex items-center justify-start gap-4">
+          <div className="text-darkerGray flex gap-2">
+            <p>Tags</p>
+            <IoPricetags size={20} />
+          </div>
+          <div className="my-8">
+            {blogData.tags.map((tag, index) => (
+              <span
+                key={index}
+                className="text-xs border rounded-md border-lightGray border-opacity-40 text-tertiary font-bold px-2 py-1 mr-2"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </div>
