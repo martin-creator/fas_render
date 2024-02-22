@@ -3,7 +3,7 @@ import "./globals.css";
 import NavigationBar from "@/components/NavigationBar";
 import Footer from "@/components/Footer";
 import dynamic from "next/dynamic";
-import { css } from "@emotion/react";
+import CmsNavbar from "@/components/CmsNavbar";
 
 const dmSans = DM_Sans({
   weight: "400",
@@ -22,8 +22,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      {/* <CmsNavbar /> */}
       <body className={dmSans.className}>{children}</body>
     </html>
   );
 }
-// className={dmSans.className}

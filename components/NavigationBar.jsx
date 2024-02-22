@@ -10,6 +10,7 @@ import { usePathname } from "next/navigation";
 
 const NavigationBar = () => {
   const [showNav, setShowNav] = useState(false);
+
   const navLinks = [
     {
       title: "Home",
@@ -63,7 +64,8 @@ const NavigationBar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [isSticky]);
-// bg-primary bg-opacity-90
+  // bg-primary bg-opacity-90
+
   return (
     <div className={`sticky top-0 left-0 z-20 `}>
       <div
@@ -72,13 +74,13 @@ const NavigationBar = () => {
         } `}
       >
         {/* logo */}
-        <div>
+        <Link href="/">
           <Image
             height={100}
             src={LogoLong}
             alt="Future African Scientist Logo"
           />
-        </div>
+        </Link>
 
         {/* Links */}
         <div className="hidden md:flex gap-4 uppercase text-tertiary">
