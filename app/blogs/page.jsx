@@ -1,9 +1,6 @@
 import BlogCardComponent from "@/components/BlogCardComponent";
 import NavigationBar from "@/components/NavigationBar";
-import PrimaryButton from "@/components/PrimaryButton";
 import React from "react";
-import { blogs } from "../../data/data";
-import { useRouter } from "next/navigation";
 import Footer from "@/components/Footer";
 import { client } from "@/sanity/lib/client";
 import Link from "next/link";
