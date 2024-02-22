@@ -43,7 +43,6 @@ async function getAllTags() {
 export const revalidate = 60;
 const BlogsPage = async () => {
   const blogs = await getPosts();
-  // console.log(blogs);
   // TAGS
   const tags = await getAllTags();
   return (
@@ -89,8 +88,7 @@ const BlogsPage = async () => {
             excerpt={blog.excerpt}
             publishedAt={blog.publishedAt}
             tags={blog.tags}
-            author={blog.author}
-            // onClick={()=>{NavigateFunction(blog.id)}}
+            author={blog.author}      
           />
         ))}
       </div>

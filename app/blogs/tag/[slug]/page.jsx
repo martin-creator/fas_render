@@ -56,7 +56,6 @@ const TagsPage = async ({ params }) => {
             publishedAt={blog.publishedAt}
             tags={blog.tags}
             author={blog.author}
-            // onClick={()=>{NavigateFunction(blog.id)}}
           />
         ))}
       </div>

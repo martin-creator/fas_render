@@ -1,3 +1,4 @@
+"use client"
 import NavigationBar from "@/components/NavigationBar";
 import SectionHeading from "@/components/SectionHeading";
 import React, { useState } from "react";

@@ -28,10 +28,10 @@ const NavigationBar = () => {
       title: "Our Programs",
       link: "/programs",
     },
-    {
-      title: "Events",
-      link: "/events",
-    },
+    // {
+    //   title: "Events",
+    //   link: "/events",
+    // },
     {
       title: "Blog",
       link: "/blogs",
@@ -43,7 +43,6 @@ const NavigationBar = () => {
   ];
 
   const pathname = usePathname();
-  // console.log("pathname", pathname);
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {

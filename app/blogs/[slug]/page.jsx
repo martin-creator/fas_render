@@ -1,8 +1,5 @@
 import NavigationBar from "@/components/NavigationBar";
 import React from "react";
-import { useParams } from "next/navigation";
-import { blogs } from "../../../data/data";
-import blogImage from "../../../public/blogImg.jpg";
 import { IoPricetags } from "react-icons/io5";
 import { FaCalendarDay, FaUser } from "react-icons/fa";
 import Image from "next/image";
@@ -67,8 +64,6 @@ const IndividualBlogPage = async ({ params }) => {
       {/* body */}
       <div className="flex flex-col mt-16 justify-center items-center">
         <Image src={blog.banner} width={600} height={400} alt="blog image" />
-
-        {/* <div className="mt-8 w-[80%] text-darkerGray">{blog.content}</div> */}
         <div className={richTextStyles}>
           <PortableText
             value={blog?.body}

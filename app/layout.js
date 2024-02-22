@@ -1,9 +1,5 @@
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
-import NavigationBar from "@/components/NavigationBar";
-import Footer from "@/components/Footer";
-import dynamic from "next/dynamic";
-import { css } from "@emotion/react";
 
 const dmSans = DM_Sans({
   weight: "400",
@@ -26,4 +22,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-// className={dmSans.className}
