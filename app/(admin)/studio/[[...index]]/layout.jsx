@@ -1,9 +1,7 @@
 import { DM_Sans } from "next/font/google";
-import "./globals.css";
 import NavigationBar from "@/components/NavigationBar";
 import Footer from "@/components/Footer";
 import dynamic from "next/dynamic";
-import CmsNavbar from "@/components/CmsNavbar";
 
 const dmSans = DM_Sans({
   weight: "400",

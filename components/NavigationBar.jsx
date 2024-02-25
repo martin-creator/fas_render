@@ -64,7 +64,7 @@ const NavigationBar = () => {
     };
   }, [isSticky]);
   // bg-primary bg-opacity-90
-
+  // Function to determine the active link
   return (
     <div className={`sticky top-0 left-0 z-20 `}>
       <div
