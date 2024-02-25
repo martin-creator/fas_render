@@ -22,7 +22,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/* <CmsNavbar /> */}
       <body className={dmSans.className}>{children}</body>
     </html>
   );

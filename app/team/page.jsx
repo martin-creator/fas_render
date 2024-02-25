@@ -271,7 +271,7 @@ const TeamPage = () => {
                             {/* <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"> */}
                             <div className="flex relative items-center p-4 md:p-5  rounded-t ">
                               <div className="flex flex-col items-center justify-center w-full">
-                                <div className="rounded-full">
+                                <div className="w-[150px] h-[150px] overflow-hidden rounded-full">
                                   <Image
                                     className="rounded-full w-full"
                                     width={80}

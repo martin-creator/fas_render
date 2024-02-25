@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import LogoLong from "../public/FAS1.png";
 import { MdOutlineFacebook } from "react-icons/md";
-import { FaLinkedin, FaYoutube, FaSquareXTwitter } from "react-icons/fa6";
+import { FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import Link from 'next/link';
 const Footer = () => {

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import hero from "../public/heroImage.png";
-import NavigationBar from "./NavigationBar";
 
 const HeroComponent = () => {
   return (

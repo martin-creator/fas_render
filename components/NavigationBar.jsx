@@ -28,10 +28,10 @@ const NavigationBar = () => {
       title: "Our Programs",
       link: "/programs",
     },
-    // {
-    //   title: "Events",
-    //   link: "/events",
-    // },
+    {
+      title: "Events",
+      link: "/events",
+    },
     {
       title: "Blog",
       link: "/blogs",

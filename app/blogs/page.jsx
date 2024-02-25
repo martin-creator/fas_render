@@ -4,6 +4,7 @@ import React from "react";
 import Footer from "@/components/Footer";
 import { client } from "@/sanity/lib/client";
 import Link from "next/link";
+import { Spinner } from "@/components/Spinner";
 
 async function getPosts() {
   const query = `
@@ -24,7 +25,7 @@ async function getPosts() {
   const data = await client.fetch(query);
   return data;
 }
-
+export const revalidate = 60;
 async function getAllTags() {
   const query = `
   *[_type == "tag"] {
@@ -37,11 +38,24 @@ async function getAllTags() {
   const tags = client.fetch(query);
   return tags;
 }
-export const revalidate = 60;
 const BlogsPage = async () => {
   const blogs = await getPosts();
   // TAGS
   const tags = await getAllTags();
+
+  if (!blogs) {
+    return (
+      <div className="w-full h-screen">
+        <div className="bg-primary sticky top-0 left-0 h-1/2 flex flex-col w-full">
+          <NavigationBar />
+        </div>
+        <div className="h-1/2 flex items-center justify-center">
+          <Spinner />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div>
       <div className="bg-primary sticky top-0 left-0 h-1/2 flex flex-col w-full">
@@ -85,7 +99,7 @@ const BlogsPage = async () => {
             excerpt={blog.excerpt}
             publishedAt={blog.publishedAt}
             tags={blog.tags}
-            author={blog.author}      
+            author={blog.author}
           />
         ))}
       </div>

@@ -1,5 +1,6 @@
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
+import { EventContextProvider } from "@/context/eventContext";
 
 const dmSans = DM_Sans({
   weight: "400",
@@ -18,7 +19,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={dmSans.className}>{children}</body>
+      <body className={dmSans.className}>
+        {/* {children} */}
+        <EventContextProvider> {children}</EventContextProvider>
+      </body>
     </html>
   );
 }

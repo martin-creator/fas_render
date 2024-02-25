@@ -1,10 +1,41 @@
-"use client"
+"use client";
+import EventCard from "@/components/EventCard";
+import Footer from "@/components/Footer";
 import NavigationBar from "@/components/NavigationBar";
 import SectionHeading from "@/components/SectionHeading";
-import React, { useState } from "react";
+import { useEventContext } from "@/context/eventContext";
+import React, { useEffect, useState } from "react";
+import { Spinner } from "@/components/Spinner";
 
 const EventsPage = () => {
   const [tabState, setTabState] = useState("upcoming");
+  const [eventsForUpcoming, setEventsForUpcoming] = useState([]);
+  const [eventsForPast, setEventsForPast] = useState([]);
+  const { getUpcomingEvents, getPastEvents } =
+    useEventContext();
+
+  useEffect(() => {
+    const upcomingEvents = getUpcomingEvents();
+    setEventsForUpcoming(upcomingEvents);
+    const pastEvents = getPastEvents();
+    setEventsForPast(pastEvents);
+  }, [getPastEvents, getUpcomingEvents]);
+
+  if (
+    (tabState === "upcoming" && eventsForUpcoming.length === 0) ||
+    (tabState === "past" && eventsForPast.length === 0)
+  ) {
+    return (
+      <div className="w-full h-screen">
+        <div className="bg-primary sticky top-0 left-0 h-1/2 flex flex-col w-full">
+          <NavigationBar />
+        </div>
+        <div className="h-1/2 flex items-center justify-center">
+          <Spinner />
+        </div>
+      </div>
+    );
+  }
   return (
     <div>
       <div className="bg-primary sticky top-0 left-0 h-1/2 flex flex-col w-full">
@@ -24,7 +55,7 @@ const EventsPage = () => {
         <div className="text-tertiary text-lg flex gap-4 pb-16">
           <button
             onClick={() => {
-              setTabState("core");
+              setTabState("upcoming");
             }}
             className={`cursor-pointer hover:scale-110 transition duration-300 ease-in-out ${
               tabState === "upcoming" ? "font-bold underline" : ""
@@ -35,7 +66,7 @@ const EventsPage = () => {
           <div className="border-l border-l-tertiary" />
           <button
             onClick={() => {
-              setTabState("upcoming");
+              setTabState("past");
             }}
             className={`cursor-pointer hover:scale-110 transition duration-300 ease-in-out ${
               tabState === "past" ? "font-bold underline" : ""
@@ -48,8 +79,58 @@ const EventsPage = () => {
 
       {/* Body */}
       <div>
-        <SectionHeading Title={tabState} Bg="light" />
+        {tabState === "upcoming" && (
+          <div className="w-full">
+            <div className="flex items-center justify-center capitalize">
+              <SectionHeading Title={tabState} Bg="light" />
+            </div>
+            {/* cards */}
+            <div className="px-16 py-8 grid grid-cols-1 items-center md:grid-cols-2 gap-8 lg:grid-cols-3 2xl:grid-cols-4">
+              {eventsForUpcoming.map((event) => (
+                <div
+                  key={event._id}
+                  className="col-span-1 flex items-center justify-center"
+                >
+                  <EventCard
+                    name={event?.name}
+                    slug={event?.slug}
+                    banner={event?.banner}
+                    location={event?.location}
+                    excerpt={event?.excerpt}
+                    date={event?.date}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+        {tabState === "past" && (
+          <div className="w-full">
+            <div className="flex items-center justify-center capitalize">
+              <SectionHeading Title={tabState} Bg="light" />
+            </div>
+            {/* cards */}
+            <div className="px-16 py-8 grid grid-cols-1 items-center md:grid-cols-2 gap-8 lg:grid-cols-3 2xl:grid-cols-4">
+              {eventsForPast.map((event, index) => (
+                <div
+                  key={index}
+                  className="col-span-1 flex items-center justify-center"
+                >
+                  <EventCard
+                    name={event?.name}
+                    slug={event?.slug}
+                    banner={event?.banner}
+                    location={event?.location}
+                    excerpt={event?.excerpt}
+                    date={event?.date}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
+      <Footer />
     </div>
   );
 };
