@@ -5,6 +5,8 @@ import LogoLong from "../public/FAS1.png";
 import Link from "next/link";
 import { BsInstagram } from "react-icons/bs";
 import { RiTwitterXLine } from "react-icons/ri";
+// import Linkedin icon
+import { FaLinkedin } from "react-icons/fa";
 import { IoMenu, IoCloseCircle } from "react-icons/io5";
 import { usePathname } from "next/navigation";
 
@@ -97,8 +99,10 @@ const NavigationBar = () => {
         </div>
         {/* Social Media */}
         <div className="hidden md:flex gap-4 text-tertiary ">
-          <BsInstagram className="text-animation-one" />
+          {/* <BsInstagram className="text-animation-one" /> */}
+          <FaLinkedin className="text-animation-one" />
           <RiTwitterXLine className="text-animation-one" />
+
         </div>
         {/* Mobile Menu */}
         {!showNav && (

@@ -89,26 +89,20 @@ const about = () => {
       </div>
       {/* Our Story Section */}
       <div className="flex flex-col items-center pt-8">
-        <SectionHeading Title={"Our Story"} Bg="light" className="" />
+        {/* <SectionHeading Title={"Our Story"} Bg="light" className="" /> */}
         <p className="py-8 px-16 md:px-32 text-center text-darkerGray">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis
-          voluptatum doloremque dolorum illum nam, culpa est quasi, nisi saepe
-          hic soluta reprehenderit amet ea mollitia itaque expedita beatae id
-          dolorem, laudantium veritatis! Iure possimus illum cum, voluptas
-          magnam iusto maxime facilis commodi adipisci reprehenderit corporis
-          assumenda ipsa ullam consequatur accusantium libero distinctio quos
-          numquam eius tenetur quod rem labore impedit pariatur. Odit sed
-          molestias laboriosam aperiam animi perspiciatis maiores nam nemo
-          magnam deserunt veritatis sunt modi magni dicta, corrupti adipisci
-          tenetur natus doloribus repellat ipsam sit, accusantium neque quis
-          error. Architecto necessitatibus blanditiis doloremque? Numquam,
-          excepturi iusto blanditiis ullam totam non repellendus quidem sit
-          possimus autem ut, natus mollitia id laboriosam quod distinctio.
-          Provident, doloremque laboriosam at unde dolore non maxime magni
-          reprehenderit asperiores quia ipsa aspernatur! Dignissimos natus
-          magnam temporibus neque odit repudiandae unde nisi? Labore illum
-          neque, iusto repellat quidem numquam praesentium iste ratione adipisci
-          quos? Autem, eveniet!
+          Future African Scientist (FAS) is a non-profit organization founded in
+          2020 to equip early career scientists and undergraduate, as well as
+          upper-secondary students in Africa, with the skills, infrastructure,
+          and network they need to solve Africa’s most pressing challenges. FAS
+          partners with leading scientists from reputable research organizations
+          and institutes to offer both virtual and in-person training in
+          scientific research and entrepreneurship to the most promising young
+          scientists in Africa. All students who graduate from FAS become part
+          of a lifelong network of scientists in healthcare, agriculture, and
+          artificial intelligence, where they are continuously matched with
+          opportunities(jobs, internships) to work on real-world projects and learn from industry
+          experts.
         </p>
         <div className="w-[60%]">
           <Image
@@ -130,7 +124,7 @@ const about = () => {
             <SectionHeading Title={"Our Mission"} Bg="light" />
             <p className="py-4 text-center md:text-left text-darkerGray">
               To equip African early-career scientists with the skills,
-              opportunities, and networks to conduct impactful research and lead
+              infrastructure and networks to conduct impactful research and lead
               innovative projects.
             </p>
           </div>
