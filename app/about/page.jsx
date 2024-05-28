@@ -22,13 +22,13 @@ const about = () => {
   let impactStatements = [
     {
       figure: "10,000",
-      description: "Globally competitive career scientists trained.",
+      description: "Globally competitive early career scientists trained.",
       icon: <FaUserDoctor size={30} />,
     },
     {
       figure: "50",
       description:
-        "general purpose laboratories established across 12 African countries",
+        "General purpose laboratories established across 12 African countries",
       icon: <ImLab size={30} />,
     },
     {
@@ -101,8 +101,8 @@ const about = () => {
           scientists in Africa. All students who graduate from FAS become part
           of a lifelong network of scientists in healthcare, agriculture, and
           artificial intelligence, where they are continuously matched with
-          opportunities(jobs, internships) to work on real-world projects and learn from industry
-          experts.
+          opportunities(jobs, internships) to work on real-world projects and
+          learn from industry experts.
         </p>
         <div className="w-[60%]">
           <Image
@@ -186,9 +186,14 @@ const about = () => {
           <div className="flex flex-col-reverse md:grid grid-cols-2 gap-4">
             <div className="col-span-1 flex flex-col items-center justify-center">
               <p className="text-darkerGray w-[80%] text-center mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-                voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. A, voluptatum.
+                Are you looking to extend training to a
+                group of exceptional scientists working in healthcare,
+                agriculture, and artificial intelligence? Do you want to help
+                establish research infrastructure to enable young scientists to
+                conduct groundbreaking research? Do you have job opportunities,
+                internships, or projects that you want to share with talented
+                young scientists in Africa? Contact us today to explore how we can collaborate and
+                support the next generation of African scientific leaders.
               </p>
               <div className="w-1/2 md:w-full flex items-center justify-center mb-16 md:mb-0">
                 <PrimaryButton Title="Contact Us" />
