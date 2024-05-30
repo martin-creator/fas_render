@@ -114,28 +114,28 @@ const Programs = () => {
     {
       Icon: <GiArchiveResearch size={24} />,
       Title: "Application and Selection",
-      Duration: "3 Months",
+      Duration: "1 Month",
       Content:
         "Both Mentors and mentees submit their application to join the program. The applications are reviewed and successful applicants are selected to join the program.",
     },
     {
       Icon: <FaTools size={24} />,
       Title: "AI Matching",
-      Duration: "3 Months",
+      Duration: "2 Weeks",
       Content:
         "Mentors and mentees are matched based on their interests, expertise, and availability. The matching is done using an AI algorithm that ensures the best possible match.",
     },
     {
       Icon: <FaCalendarAlt size={24} />,
       Title: "Virtual Sessions Commence",
-      Duration: "3 Months",
+      Duration: "6 Months",
       Content:
         " The program commences with virtual sessions between mentors and mentees. The sessions are held weekly and are designed to provide guidance and support to the mentees.",
     },
     {
       Icon: <FaBusinessTime size={24} />,
       Title: "Meetups and Projects",
-      Duration: "3 Months",
+      Duration: "6 Months",
       Content:
         " The program also includes quarterly in-person meetups and group projects that provide hands-on experience to the mentees.",
     },
