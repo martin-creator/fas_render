@@ -59,10 +59,10 @@ const ContactUs = () => {
           <p className="text-5xl text-tertiary font-bold">Contact Us</p>
         </div>
         <div className="w-[60%] text-center text-lightGray mb-12">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-          aliquam. Beatae dignissimos voluptate suscipit maiores aliquam dolor
-          asperiores atque quo amet qui libero magni, nemo exercitationem ipsam,
-          ex esse illum veritatis sequi expedita.
+          Reach out to Future African Scientist for partnerships, donations,
+          event organization, job opportunities, internships, or any other
+          inquiries. We’re here to collaborate, innovate, and make a difference
+          together.
         </div>
       </div>
       {/* body */}
@@ -74,12 +74,11 @@ const ContactUs = () => {
               Description={item.description}
               Icon={item.icon}
               Url={item.url}
-              
             />
           </div>
         ))}
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
