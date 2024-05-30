@@ -5,6 +5,7 @@ import SectionHeading from "@/components/SectionHeading";
 import Image from "next/image";
 import React from "react";
 import aboutUs from "../../public/aboutImg.png";
+import fas_about from "../../public/fas_about.png";
 import support from "../../public/support.png";
 import {
   FaUserDoctor,
@@ -106,7 +107,7 @@ const about = () => {
         </p>
         <div className="w-[60%]">
           <Image
-            src={aboutUs}
+            src={fas_about}
             alt="Image of a male scientist examining samples"
           />
         </div>

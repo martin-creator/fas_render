@@ -29,7 +29,7 @@ const TeamPage = () => {
     {
       name: "Robert Kyomuhendo",
       position: "Co-Founder | Director of Admissions & Outreach",
-      bio: " Robert is a rising young leader pursuing bachelors of medicine and surgery at Gulu University, Uganda. He is diverse-minded individual passionate about crafting solutions to community problems and sharing ideas with like-minded individuals. While at campus Robert is a budding scientific researcher and is committed to applying theoretical knowledge to practice. Notably, he has served in different capacities including the 19th Students Guild, Federation of Uganda Medical Students Association (FUMSA) and he was selected as a Class of 2020 Millennium Fellow.",
+      bio: " Robert is a rising young medical Doctor who graduated from Gulu University medical school, Uganda. He is a diverse-minded individual passionate about research and entrepreneurship, sharing ideas with like-minded individuals to craft solutions to community problems. While at campus, Robert worked on research projects on such topics as antimicrobial resistance, reproductive health and clinical practice. He also served and collaborated with various organisations like Rotary, Niteo Africa to create social impact. Notably, he served in different capacities including the 19th Students Guild, Federation of Uganda Medical Students Association (FUMSA) and as the Gulu University Campus Director for Millennium fellowship  class of 2020.",
       img: "/teamImg/robert.png",
       linkedin: "https://www.linkedin.com/in/john-doe/",
       twitter: "https://twitter.com/johndoe",
@@ -45,7 +45,7 @@ const TeamPage = () => {
     {
       name: "Jimmy Nkaiwuatei",
       position: "Research Manager",
-      bio: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, aliquam. Beatae dignissimos voluptate suscipit maiores aliquam dolor asperiores atque quo amet qui libero magni, nemo exercitationem ipsam, ex esse illum veritatis sequi expedita. Minus consequatur amet excepturi sequi et error, ad fugit explicabo voluptas corporis tenetur provident hic accusantium quisquam!",
+      bio: " Jimmy Nkaiwuatei is a Health Research Scientist with a focus on infectious diseases and antimicrobial resistance (AMR). Also, he has a great interest in vaccine/drug research and development as a sustainable solution to antimicrobial-resistant infectious diseases. As an AMR Champion, Jimmy has spearheaded the initiation and implementation of several antimicrobial resistance stewardship programs in various countries across Africa, through the Students Against Superbugs (SAS) Africa Network. He looks forward to building the capacity of emerging research scientists across Africa to promote scientific research and innovation for the provision of effective and context-specific solutions to challenges inflicting the continent.Jimmy holds a Bachelor of Science in Biochemistry and Molecular Medicine from Jomo Kenyatta University of Agriculture and Technology, Kenya, and a graduate of the Young African Leaders Initiative (YALI), a United States signature’s effort to invest in the next generation of African leaders.",
       img: "/teamImg/jimmy.png",
       linkedin: "https://www.linkedin.com/in/john-doe/",
       twitter: "https://twitter.com/johndoe",

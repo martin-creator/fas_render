@@ -20,6 +20,8 @@ import CTAComponent from "@/components/CTAComponent";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import mentorship from "../../public/mentorship.jpg";
+import fas_asel from "../../public/fas_asel.png";
+import fas_ment from "../../public/fas_ment.png";
 import { IoBriefcase } from "react-icons/io5";
 const Programs = () => {
   const [tabState, setTabState] = useState("research");
@@ -224,10 +226,13 @@ const Programs = () => {
                 dedicated to advancing science and solving pressing challenges.
               </p>
               <Image
-                src={mentorship}
+                src={fas_asel}
                 className="rounded-md mt-8"
                 alt="Image of student working in a lab"
               />
+              <p className="text-left text-sm  text-dark mt-8 mb-12">
+          Students attending a class during the African Science Research Academy in 2022.
+          </p>
             </div>
             <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 grid-rows-2 w-full gap-8  py-16 px-16">
               {whyCardsResearchAcademy.map((card, index) => (
@@ -325,10 +330,14 @@ const Programs = () => {
                 guidance and mentorship in their scientific journeys
               </p>
               <Image
-                src={mentorship}
+                src={fas_ment}
                 className="rounded-md mt-8"
                 alt="Image of student working in a lab"
               />
+              <p className="text-left text-sm  text-dark mt-8 mb-12">
+              Mentorship call with some scientists from  the Washington University in St. Louis
+              </p>
+
             </div>
             <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 grid-rows-2 w-full gap-8 p-16">
               {whyCardsMentorship.map((card, index) => (
@@ -378,8 +387,12 @@ const Programs = () => {
           <div className="w-full backgroundLight flex flex-col items-center justify-center py-8">
             <SectionHeading Bg="light" Title="Am I Eligible?" />
             <p className="text-center w-1/2 mt-4 text-dimGray">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Provident, aliquam.
+              Our admissions process is designed to recruit the most promising
+              young scientists from across Africa. We welcome applicants at all
+              educational levels, including undergraduates, master's, and PhD
+              students. We understand that many of our applicants may have
+              limited or no research experience. Our holistic review process
+              focuses on the following key areas
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-8 py-12">
               {eligibilityCriteria.map((item, index) => (
@@ -398,9 +411,9 @@ const Programs = () => {
             </div>
           </div>
           <CTAComponent
-            SectionTitle={"Apply Now"}
+            SectionTitle={"Applications Closed"}
             ButtonTitle={"Register Interest"}
-            Message="Ready to kickstart your journey in scientific research and entrepreneurship? Complete the form. Join Africa's top young scientists and make a real difference. Apply now!  "
+            Message="Ready to kickstart your journey in scientific research and entrepreneurship? Complete the form. Join Africa's top young scientists and make a real difference!  "
           />
         </div>
       )}

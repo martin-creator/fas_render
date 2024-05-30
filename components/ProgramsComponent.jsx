@@ -4,6 +4,8 @@ import SectionHeading from "./SectionHeading";
 import PrimaryButton from "./PrimaryButton";
 import Image from "next/image";
 import Program1 from "../public/program1.jpg";
+import fas_mentorship from "../public/fas_mentorship.png";
+import fas_asrb from "../public/fas_asrb.png";
 const ProgramsComponent = () => {
   return (
     <div className="flex flex-col items-center justify-center pt-8 pb-16">
@@ -35,10 +37,13 @@ const ProgramsComponent = () => {
         <div className="col-span-1">
           <Image
             className="rounded-md"
-            src={Program1}
+            src={fas_asrb}
             width={500}
             alt="image of a black laboratory professional"
           />
+          <p className="text-left text-sm  text-dark mt-8 mb-12">
+          Students at Gulu University after participating in our research bootcamp in 2022.
+          </p>
         </div>
       </div>
       {/* second */}
@@ -47,10 +52,13 @@ const ProgramsComponent = () => {
         <div className="col-span-1">
           <Image
             className="rounded-md"
-            src={Program1}
+            src={fas_mentorship}
             width={500}
             alt="image of a black laboratory professional"
           />
+         <p className="text-left text-sm  text-dark mt-8 mb-12">
+         Mentorship call with some scientists from  the Washington University in St. Louis
+          </p>
         </div>
         <div className="col-span-1 flex justify-center flex-col">
           <h5 className="text-primary text-2xl font-bold flex-nowrap w-full">
