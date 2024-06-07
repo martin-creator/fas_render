@@ -11,8 +11,7 @@ const EventsPage = () => {
   const [tabState, setTabState] = useState("upcoming");
   const [eventsForUpcoming, setEventsForUpcoming] = useState([]);
   const [eventsForPast, setEventsForPast] = useState([]);
-  const { getUpcomingEvents, getPastEvents } =
-    useEventContext();
+  const { getUpcomingEvents, getPastEvents } = useEventContext();
 
   useEffect(() => {
     const upcomingEvents = getUpcomingEvents();
@@ -47,10 +46,14 @@ const EventsPage = () => {
           <p className="text-5xl text-tertiary font-bold">Events</p>
         </div>
         <div className="w-[60%] text-center text-lightGray">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-          aliquam. Beatae dignissimos voluptate suscipit maiores aliquam dolor
-          asperiores atque quo amet qui libero magni, nemo exercitationem ipsam,
-          ex esse illum veritatis sequi expedita.
+          ### Events Join Future African Scientist's dynamic events to connect
+          with fellow innovators, gain insights from industry leaders, and
+          explore groundbreaking scientific advancements. Our events provide a
+          platform for knowledge exchange, networking, and collaboration,
+          ensuring that you stay at the forefront of science and technology in
+          Africa. Whether you’re attending workshops, conferences, or webinars,
+          you’ll find opportunities to grow, learn, and contribute to a vibrant
+          scientific community.
         </div>
         <div className="text-tertiary text-lg flex gap-4 pb-16">
           <button
