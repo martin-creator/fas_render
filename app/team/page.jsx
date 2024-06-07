@@ -181,7 +181,9 @@ const TeamPage = () => {
   ];
   const [tabState, setTabState] = useState("core");
   const [modalStates, setModalStates] = useState(
-    Array(coreTeam.length).fill(false)
+    Array(coreTeam.length).fill(false),
+    Array(advisorsTeam.length).fill(false),
+    Array(facilitatorsTeam.length).fill(false)
   );
 
   return (
