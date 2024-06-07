@@ -20,21 +20,21 @@ const EventsPage = () => {
     setEventsForPast(pastEvents);
   }, [getPastEvents, getUpcomingEvents]);
 
-  if (
-    (tabState === "upcoming" && eventsForUpcoming.length === 0) ||
-    (tabState === "past" && eventsForPast.length === 0)
-  ) {
-    return (
-      <div className="w-full h-screen">
-        <div className="bg-primary sticky top-0 left-0 h-1/2 flex flex-col w-full">
-          <NavigationBar />
-        </div>
-        <div className="h-1/2 flex items-center justify-center">
-          <Spinner />
-        </div>
-      </div>
-    );
-  }
+// if (
+  //   (tabState === "upcoming" && eventsForUpcoming.length === 0) ||
+  //   (tabState === "past" && eventsForPast.length === 0)
+  // ) {
+  //   return (
+  //     <div className="w-full h-screen">
+  //       <div className="bg-primary sticky top-0 left-0 h-1/2 flex flex-col w-full">
+  //         <NavigationBar />
+  //       </div>
+  //       <div className="h-1/2 flex items-center justify-center">
+  //         <Spinner />
+  //       </div>
+  //     </div>
+  //   );
+  // }
   return (
     <div>
       <div className="bg-primary sticky top-0 left-0 h-1/2 flex flex-col w-full">
