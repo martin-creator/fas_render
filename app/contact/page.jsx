@@ -44,7 +44,7 @@ const ContactUs = () => {
       title: "Research & Skills Development",
       icon: <FaQuestionCircle size={40} />,
       description:
-        "Is your organization looking to train and develop African scientists? Collaborate with us to provide cutting-edge research opportunities and essential skills training. Together, we can drive scientific progress and innovation",
+        "Is your organization looking to train and develop African scientists? Collaborate with us to provide cutting-edge research opportunities and essential skills training",
       url: "example.com",
     },
     {

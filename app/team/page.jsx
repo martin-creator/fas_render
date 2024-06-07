@@ -54,7 +54,8 @@ const TeamPage = () => {
   const advisorsTeam = [
     {
       name: "BRUCE WALKER, MD",
-      position: "Founding Director of the Ragon Institute of MGH, MIT and Harvard",
+      position:
+        "Founding Director of the Ragon Institute of MGH, MIT and Harvard",
       bio: " Dr. Bruce D. Walker is a physician-scientist and T cell immunologist, the founding Director of the Ragon Institute of MGH, MIT and Harvard, a Howard Hughes Medical Institute investigator, a Professor of Medicine at Harvard Medical School, and Professor of the Practice of Medicine at MIT.  He is also Adjunct Professor of Medicine at the Nelson Mandela School of Medicine at the University of KwaZulu-Natal in Durban, South Africa, where he has helped catalyzed the creation of two research institutes. His laboratory studies T cell responses to chronic viral infections, using HIV as a model system.",
       img: "/teamImg/bruce.png",
       linkedin: "https://www.linkedin.com/in/john-doe/",
@@ -62,7 +63,8 @@ const TeamPage = () => {
     },
     {
       name: "Elizabeth Marincola",
-      position: "Senior Advisor for Science Communications and Advocacy at the Science for Africa Foundation",
+      position:
+        "Senior Advisor for Science Communications and Advocacy at the Science for Africa Foundation",
       bio: "Elizabeth Marincola is Senior Advisor for Science Communications and Advocacy at the Science for Africa Foundation, after serving in a similar role at the African Academy of Sciences, since 2016. She is publisher of Open Research Africa, the SFA Foundation-affiliated open access publishing platform that offers rapid, peer reviewed, transparent and indexed science publication. Marincola was CEO of the major open access publisher PLOS, after serving as a long time PLOS board member. From 2005-2013, Marincola was President of the Society for Science & the Public (now the Society for Science) and Publisher of Science News magazine. She was Executive Director of the American Society for Cell Biology and the Coalition for Life Sciences, and Publisher of Molecular Biology of the Cell, from 1991-2005. She served on the founding board of PubMed Central and on the founding Board and as Chair of the Board of eLife. As an international leader in non-profit management, open access publishing, science advocacy, communications, education and public engagement, Marincola has published scores of peer reviewed articles and has been appointed to numerous US and EU advisory commissions on open science. She currently serves on the Advisory Board of the Johns Hopkins Bloomberg School of Public Health Center for Humanitarian Health, and on the Board of Directors of Undue Medical Debt. She received her bachelors and MBA degrees from Stanford University.",
       img: "/teamImg/elizabeth_m.png",
       linkedin: "https://www.linkedin.com/in/john-doe/",
@@ -102,7 +104,8 @@ const TeamPage = () => {
     },
     {
       name: "Wade Zamechek",
-      position: "Vice President of Development at the African Leadership Academy",
+      position:
+        "Vice President of Development at the African Leadership Academy",
       bio: "Wade Zamechek is the Vice President of Development at the African Leadership Academy (ALA) in Johannesburg, South Africa. ALA focuses on providing educational programs for young Africans to develop the next generation of ethical and entrepreneurial leaders. Wade brings over 20 years of nonprofit experience, having worked with organizations like Village Health Works, Covenant House, Salvation Army, and New York Blood Center. He holds a Bachelor’s Degree from New York University and a Master’s Degree in Nonprofit Management from the New School University.",
       img: "/teamImg/wade.png",
       linkedin: "https://www.linkedin.com/in/john-doe/",
@@ -410,7 +413,7 @@ const TeamPage = () => {
         {tabState === "advisors" && (
           <div>
             <div className="bg-backgroundLight flex flex-col items-center justify-center pt-8">
-              <SectionHeading Title="Advisors" Bg="light" />
+              <SectionHeading Title=" Past Course Facilitators" Bg="light" />
               {/* <p className="text-center w-[80%] md:w-1/2 mt-4 text-dimGray">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Provident, aliquam. Beatae dignissimos voluptate suscipit
