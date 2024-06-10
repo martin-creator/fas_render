@@ -3,6 +3,7 @@ import SectionHeading from "./SectionHeading";
 import { FlagIcon } from "react-flag-kit";
 
 import Image from "next/image";
+
 const TestimonialsComponent = () => {
   let settings = {
     dots: true,
@@ -19,8 +20,7 @@ const TestimonialsComponent = () => {
       description:
         "ASRB is a great platform for many rising AFRICAN Scientists who are not only ambitious to see progress in their careers but also desire to create a mark in this world to make Africa a better place through science and research. It gives guidance on how to plan your scientific Research journey, takes you through the steps of writing a research proposal, and equips you with the knowledge of how to give a good research talk, all of which are crucial in building a competent and distinctive researcher! You also receive mentorship and inspiration from both local and international scientific researchers who are more than willing to walk with you throughout your research journey.",
       country: "UG",
-      imageUrl:
-        "https://images.unsplash.com/photo-1521511189395-b82252213754?q=80&w=1390&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      imageUrl:"/teamImg/reagan_tst.png",
     },
     {
       name: "HADIZA MARIAM SESAY - ASRB 2022",
@@ -28,8 +28,7 @@ const TestimonialsComponent = () => {
       description:
         "I just took up a position as National Officer of Research Exchange when I saw the flyer for this program. I didn't hesitate to apply because I knew I needed any more knowledge on research, but I found more than expected. It was knowledge coupled with experience. The synchronous courses offered taught me that research could be made easy for anyone interested, and there is much more we could do to promote Research in our African region. Thanks to ASRB I will be leading my team this tenure with an array of ideas and topics on Research and masterclass, and the confidence to even get our first research project.",
       country: "UG",
-      imageUrl:
-        "https://images.unsplash.com/photo-1514222709107-a180c68d72b4?q=80&w=1498&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      imageUrl:"/teamImg/hadiza_tst.png",
     },
     {
       name: "JANICE ODHIAMBO - ASRB 2022",
@@ -37,8 +36,7 @@ const TestimonialsComponent = () => {
       description:
         "Joining this program proved vital to my research journey. I was a novice myself but after the training sessions and the iBiology courses paired with the capstone project, I can confidently carry out a project now. Straight from inception to publishing. The networks you build from this place are invaluable since there's a pool of people with common interests drawn from all over Africa. For the training sessions we have prodigies in their respective fields, so if you are keen on the program then there's only one way – up.",
       country: "KE",
-      imageUrl:
-        "https://images.unsplash.com/photo-1614317226858-a2bcad5498c0?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      imageUrl:"/teamImg/janice_tst.png"
     },
   ];
   return (
@@ -61,8 +59,8 @@ const TestimonialsComponent = () => {
                     <Image
                       className="w-16 h-16 rounded-full object-cover"
                       src={testimonial.imageUrl}
-                      width={40}
-                      height={40}
+                      width={500}
+                      height={500}
                       alt="testimonial"
                     />
                     <div>
