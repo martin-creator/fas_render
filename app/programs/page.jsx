@@ -20,6 +20,8 @@ import CTAComponent from "@/components/CTAComponent";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import mentorship from "../../public/mentorship.jpg";
+import fas_asel from "../../public/fas_asel.png";
+import fas_ment from "../../public/fas_ment.png";
 import { IoBriefcase } from "react-icons/io5";
 const Programs = () => {
   const [tabState, setTabState] = useState("research");
@@ -27,27 +29,27 @@ const Programs = () => {
   const whyCardsResearchAcademy = [
     {
       Icon: <LuBrainCircuit size={30} />,
-      Title: "Become a Scientist",
+      Title: "Industry Inspired Curriculum",
       Description:
-        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.",
+        "Access comprehensive curriculum on scientific research, entrepreneurship and people skills that are essential for a successful career in science",
     },
     {
       Icon: <BsGraphUpArrow size={30} />,
-      Title: "Improve your Research Skills",
+      Title: "Captsone Projects",
       Description:
-        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.",
+        "Work on mentor-led projects to see how every piece fits together in the scientific research process",
     },
     {
       Icon: <FaKey size={30} />,
-      Title: "Unlock the Key to success",
+      Title: "Entrepeneurial Support ",
       Description:
-        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.",
+        "Lifetime access to our support team that guides students that have science based ventures from ideation to launch",
     },
     {
       Icon: <FaKey size={30} />,
-      Title: "Unlock the Key to success",
+      Title: "Internships and Job Placements",
       Description:
-        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.",
+        "Lifetime access to an opportunity portal where you can find career opportunities in science and technology",
     },
   ];
   const whyCardsMentorship = [
@@ -80,31 +82,31 @@ const Programs = () => {
   const programTimelineItems = [
     {
       Icon: <GiArchiveResearch size={24} />,
-      Title: "Africa Science Research Bootcamp (ASRB)",
+      Title: "African Science Research Bootcamp (ASRB)",
       Duration: "3 Months",
       Content:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quaeab illo inventore. Donec tincidunt tempor.",
+        "Dive into the world of scientific research with our intensive bootcamp. Learn foundational research techniques and essential soft skills to tackle scientific challenges. Our focus on methods and data analysis ensures you develop a deep, practical understanding of research.",
     },
     {
       Icon: <FaTools size={24} />,
-      Title: "Africa Science Project Hub (ASPH)",
-      Duration: "3 Months",
+      Title: "African Science Project Hub (ASPH)",
+      Duration: "2 Months",
       Content:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quaeab illo inventore. Donec tincidunt tempor.",
+        "Take your research skills to the next level by working on real-world projects. Guided by experienced scientists, you'll address under-researched problems, gaining hands-on experience and invaluable mentorship.",
     },
     {
       Icon: <FaMoneyBills size={24} />,
       Title: "Africa Science Entrepreneurship Leadership (ASEL)",
-      Duration: "3 Months",
+      Duration: "2 Months",
       Content:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quaeab illo inventore. Donec tincidunt tempor.",
+        "Transform your research into impactful solutions. Our entrepreneurial leadership program teaches you how to build sustainable innovations, manage projects effectively, and enhance your financial and business acumen.",
     },
     {
       Icon: <FaBusinessTime size={24} />,
       Title: "Africa Science Opportunity Network (ASON)",
-      Duration: "3 Months",
+      Duration: "Lifetime Access",
       Content:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quaeab illo inventore. Donec tincidunt tempor.",
+        "Connect with leading organizations and companies through our extensive network. Gain industry experience, collaborate with global experts, and build strong professional connections that will propel your career forward.",
     },
   ];
 
@@ -112,28 +114,28 @@ const Programs = () => {
     {
       Icon: <GiArchiveResearch size={24} />,
       Title: "Application and Selection",
-      Duration: "3 Months",
+      Duration: "1 Month",
       Content:
         "Both Mentors and mentees submit their application to join the program. The applications are reviewed and successful applicants are selected to join the program.",
     },
     {
       Icon: <FaTools size={24} />,
       Title: "AI Matching",
-      Duration: "3 Months",
+      Duration: "2 Weeks",
       Content:
         "Mentors and mentees are matched based on their interests, expertise, and availability. The matching is done using an AI algorithm that ensures the best possible match.",
     },
     {
       Icon: <FaCalendarAlt size={24} />,
       Title: "Virtual Sessions Commence",
-      Duration: "3 Months",
+      Duration: "6 Months",
       Content:
         " The program commences with virtual sessions between mentors and mentees. The sessions are held weekly and are designed to provide guidance and support to the mentees.",
     },
     {
       Icon: <FaBusinessTime size={24} />,
       Title: "Meetups and Projects",
-      Duration: "3 Months",
+      Duration: "6 Months",
       Content:
         " The program also includes quarterly in-person meetups and group projects that provide hands-on experience to the mentees.",
     },
@@ -141,19 +143,23 @@ const Programs = () => {
   const eligibilityCriteria = [
     {
       Icon: <GiArchiveResearch size={24} />,
-      Description: "Must be a high school student graduating in 2023 or 2024",
+      Description:
+        "Curiosity: Has the student gone out of their way to explore a scientific topic of interest? Have they published any papers or conducted independent research?",
     },
     {
       Icon: <GiArchiveResearch size={24} />,
-      Description: "Must be a high school student graduating in 2023 or 2024",
+      Description:
+        "Leadership: Is the student actively involved in leadership initiatives within their community? Do they demonstrate the potential to inspire and lead others?",
     },
     {
       Icon: <GiArchiveResearch size={24} />,
-      Description: "Must be a high school student graduating in 2023 or 2024",
+      Description:
+        "Commitment: Is the student dedicated to completing the entire program? Do they have a track record of following through on projects or initiatives, demonstrating their ability to commit to long-term goals?",
     },
     {
       Icon: <GiArchiveResearch size={24} />,
-      Description: "Must be a high school student graduating in 2023 or 2024",
+      Description:
+        "Education: We welcome students at all educational levels, from undergraduate to PhD. Is the student pursuing or have they completed relevant academic coursework? Are they committed to furthering their education in scientific fields?",
     },
   ];
   return (
@@ -197,19 +203,36 @@ const Programs = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 bg-backgroundLight w-full">
             <div className="col-span-1 flex flex-col justify-center md:w-[95%] md:mb-0 mt-6 md:mt-0 py-4 md:py-16 px-16 ">
               <h3 className="text-2xl font-bold text-center md:text-start text-primary mb-8 md:mb-12">
-                Why Join the Science Research Academy?
+                Why Join the African Science Research Academy?
               </h3>
               <p className="text-darkerGray text-center md:text-start">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo.
+                <ul className="list-disc">
+                  <li>
+                    Are you interested in starting your scientific research
+                    career but don't know where to begin, whether you're an
+                    undergraduate, master's, or PhD student?
+                  </li>
+                  <li>
+                    Are you looking for a multidisciplinary community of
+                    researchers to see how different fields of research work
+                    together to address complex problems?
+                  </li>
+                </ul>
+              </p>
+              <p className="text-darkerGray text-center md:text-start mt-2">
+                The African Science Research Academy provides you with a strong
+                foundation in scientific inquiry on which you can build a
+                successful career. Join us and be part of a vibrant community
+                dedicated to advancing science and solving pressing challenges.
               </p>
               <Image
-                src={mentorship}
+                src={fas_asel}
                 className="rounded-md mt-8"
                 alt="Image of student working in a lab"
               />
+              <p className="text-left text-sm  text-dark mt-8 mb-12">
+          Students attending a class during the African Science Research Academy in 2022.
+          </p>
             </div>
             <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 grid-rows-2 w-full gap-8  py-16 px-16">
               {whyCardsResearchAcademy.map((card, index) => (
@@ -226,13 +249,11 @@ const Programs = () => {
           <div className="bg-primary w-full p-8 flex flex-col items-center justify-center ">
             <SectionHeading Title="Program Timeline" Bg="dark" />
             <p className="text-center w-1/2 mt-4 mb-12 text-dimGray">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Provident, aliquam. Beatae dignissimos voluptate suscipit maiores
-              aliquam dolor asperiores atque quo amet qui libero magni, nemo
-              exercitationem ipsam, ex esse illum veritatis sequi expedita.
-              Minus consequatur amet excepturi sequi et error, ad fugit
-              explicabo voluptas corporis tenetur provident hic accusantium
-              quisquam!
+              Our program spans 6-7 months, with breaks in between, and is
+              designed to be compatible with your school or work schedule.
+              Delivered entirely online, it comprises both synchronous and
+              asynchronous sessions, ensuring flexibility to accommodate your
+              professional and academic commitments.
             </p>
             {/* timeline */}
             <ol className="items-center sm:flex">
@@ -265,8 +286,12 @@ const Programs = () => {
           <div className="w-full backgroundLight flex flex-col items-center justify-center py-8">
             <SectionHeading Bg="light" Title="Am I Eligible?" />
             <p className="text-center w-1/2 mt-4 text-dimGray">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Provident, aliquam.
+              Our admissions process is designed to recruit the most promising
+              young scientists from across Africa. We welcome applicants at all
+              educational levels, including undergraduates, master's, and PhD
+              students. We understand that many of our applicants may have
+              limited or no research experience. Our holistic review process
+              focuses on the following key areas
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-8 py-12">
               {eligibilityCriteria.map((item, index) => (
@@ -285,9 +310,9 @@ const Programs = () => {
             </div>
           </div>
           <CTAComponent
-            SectionTitle={"Apply Now"}
-            ButtonTitle={"Apply"}
-            Message="Fill this form and someone from our team will contact you within 24 hours. , nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum.”  "
+            SectionTitle={"Applications Closed"}
+            ButtonTitle={"Register Interest"}
+            Message="Ready to kickstart your journey in scientific research and entrepreneurship? Complete the form. Join Africa's top young scientists and make a real difference!"
           />
         </div>
       )}
@@ -305,10 +330,14 @@ const Programs = () => {
                 guidance and mentorship in their scientific journeys
               </p>
               <Image
-                src={mentorship}
+                src={fas_ment}
                 className="rounded-md mt-8"
                 alt="Image of student working in a lab"
               />
+              <p className="text-left text-sm  text-dark mt-8 mb-12">
+              Mentorship call with some scientists from  the Washington University in St. Louis
+              </p>
+
             </div>
             <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 grid-rows-2 w-full gap-8 p-16">
               {whyCardsMentorship.map((card, index) => (
@@ -358,8 +387,12 @@ const Programs = () => {
           <div className="w-full backgroundLight flex flex-col items-center justify-center py-8">
             <SectionHeading Bg="light" Title="Am I Eligible?" />
             <p className="text-center w-1/2 mt-4 text-dimGray">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Provident, aliquam.
+              Our admissions process is designed to recruit the most promising
+              young scientists from across Africa. We welcome applicants at all
+              educational levels, including undergraduates, master's, and PhD
+              students. We understand that many of our applicants may have
+              limited or no research experience. Our holistic review process
+              focuses on the following key areas
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-8 py-12">
               {eligibilityCriteria.map((item, index) => (
@@ -378,9 +411,9 @@ const Programs = () => {
             </div>
           </div>
           <CTAComponent
-            SectionTitle={"Apply Now"}
-            ButtonTitle={"Apply"}
-            Message="Fill this form and someone from our team will contact you within 24 hours. , nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum.”  "
+            SectionTitle={"Applications Closed"}
+            ButtonTitle={"Register Interest"}
+            Message="Ready to kickstart your journey in scientific research and entrepreneurship? Complete the form. Join Africa's top young scientists and make a real difference!  "
           />
         </div>
       )}

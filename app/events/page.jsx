@@ -11,8 +11,7 @@ const EventsPage = () => {
   const [tabState, setTabState] = useState("upcoming");
   const [eventsForUpcoming, setEventsForUpcoming] = useState([]);
   const [eventsForPast, setEventsForPast] = useState([]);
-  const { getUpcomingEvents, getPastEvents } =
-    useEventContext();
+  const { getUpcomingEvents, getPastEvents } = useEventContext();
 
   useEffect(() => {
     const upcomingEvents = getUpcomingEvents();
@@ -20,22 +19,6 @@ const EventsPage = () => {
     const pastEvents = getPastEvents();
     setEventsForPast(pastEvents);
   }, [getPastEvents, getUpcomingEvents]);
-
-  // if (
-  //   (tabState === "upcoming" && eventsForUpcoming.length === 0) ||
-  //   (tabState === "past" && eventsForPast.length === 0)
-  // ) {
-  //   return (
-  //     <div className="w-full h-screen">
-  //       <div className="bg-primary sticky top-0 left-0 h-1/2 flex flex-col w-full">
-  //         <NavigationBar />
-  //       </div>
-  //       <div className="h-1/2 flex items-center justify-center">
-  //         <Spinner />
-  //       </div>
-  //     </div>
-  //   );
-  // }
   return (
     <div>
       <div className="bg-primary sticky top-0 left-0 h-1/2 flex flex-col w-full">
@@ -47,10 +30,14 @@ const EventsPage = () => {
           <p className="text-5xl text-tertiary font-bold">Events</p>
         </div>
         <div className="w-[60%] text-center text-lightGray">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-          aliquam. Beatae dignissimos voluptate suscipit maiores aliquam dolor
-          asperiores atque quo amet qui libero magni, nemo exercitationem ipsam,
-          ex esse illum veritatis sequi expedita.
+          Events Join Future African Scientist's dynamic events to connect
+          with fellow innovators, gain insights from industry leaders, and
+          explore groundbreaking scientific advancements. Our events provide a
+          platform for knowledge exchange, networking, and collaboration,
+          ensuring that you stay at the forefront of science and technology in
+          Africa. Whether you’re attending workshops, conferences, or webinars,
+          you’ll find opportunities to grow, learn, and contribute to a vibrant
+          scientific community.
         </div>
         <div className="text-tertiary text-lg flex gap-4 pb-16">
           <button

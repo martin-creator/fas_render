@@ -67,10 +67,7 @@ const BlogsPage = async () => {
           <p className="text-5xl text-tertiary font-bold">Our Blogs</p>
         </div>
         <div className="w-[60%] text-center text-lightGray">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-          aliquam. Beatae dignissimos voluptate suscipit maiores aliquam dolor
-          asperiores atque quo amet qui libero magni, nemo exercitationem ipsam,
-          ex esse illum veritatis sequi expedita.
+        Dive into a wealth of knowledge with our blog, where we explore everything from cutting-edge medical research and innovative health tech to practical advice on surgery, pediatrics, and mental health. Discover how science and entrepreneurship are transforming Africa and beyond.
         </div>
         <button className="border border-tertiary mb-8 bg-transparent hover:bg-tertiary text-tertiary hover:text-primary py-2 px-4 rounded-md hover:scale-110 transition duration-300 ease-in-out">
           Have a blog idea? Submit it here!

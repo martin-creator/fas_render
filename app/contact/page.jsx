@@ -16,35 +16,42 @@ const ContactUs = () => {
       title: "Partnerships",
       icon: <FaHandshakeAngle size={40} />,
       description:
-        "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum",
+        "Partner with Future African Scientist to foster innovation, support young scientists, and create impactful research collaborations. Connect with us to make a lasting impact in science and technology",
       url: "example.com",
     },
     {
       title: "Donations",
       icon: <FaHandHoldingHeart size={40} />,
       description:
-        "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum",
+        "Support the next generation of African scientists through your generous donations. Your contributions help provide the resources and opportunities they need to excel",
       url: "example.com",
     },
     {
       title: "Events",
       icon: <FaCalendarCheck size={40} />,
       description:
-        "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum",
+        "Participate in our events to network with industry leaders, gain valuable insights, and stay ahead in the scientific community. Join us in shaping the future of science in Africa",
       url: "example.com",
     },
     {
       title: "Jobs/Internships",
       icon: <FaBriefcase size={40} />,
       description:
-        "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum",
+        "Are you an organization with job or internship opportunities for young scientists? Partner with us to connect with talented individuals eager to contribute to your projects and grow in their careers",
+      url: "example.com",
+    },
+    {
+      title: "Research & Skills Development",
+      icon: <FaQuestionCircle size={40} />,
+      description:
+        "Is your organization looking to train and develop African scientists? Collaborate with us to provide cutting-edge research opportunities and essential skills training",
       url: "example.com",
     },
     {
       title: "Other Queries",
       icon: <FaQuestionCircle size={40} />,
       description:
-        "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum",
+        "Have questions or need more information? Reach out to us for any inquiries. We're here to assist and provide the information you need",
       url: "example.com",
     },
   ];
@@ -59,10 +66,10 @@ const ContactUs = () => {
           <p className="text-5xl text-tertiary font-bold">Contact Us</p>
         </div>
         <div className="w-[60%] text-center text-lightGray mb-12">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-          aliquam. Beatae dignissimos voluptate suscipit maiores aliquam dolor
-          asperiores atque quo amet qui libero magni, nemo exercitationem ipsam,
-          ex esse illum veritatis sequi expedita.
+          Reach out to Future African Scientist for partnerships, donations,
+          event organization, job opportunities, internships, or any other
+          inquiries. We’re here to collaborate, innovate, and make a difference
+          together.
         </div>
       </div>
       {/* body */}
@@ -74,12 +81,11 @@ const ContactUs = () => {
               Description={item.description}
               Icon={item.icon}
               Url={item.url}
-              
             />
           </div>
         ))}
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

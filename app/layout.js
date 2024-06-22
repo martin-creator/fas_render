@@ -12,8 +12,8 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  title: "African Scientist",
-  description: "Future African Scientist",
+  title: "Future African Scientist",
+  description: "Fostering the next generation of African scientists and engineers",
 };
 
 export default function RootLayout({ children }) {

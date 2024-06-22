@@ -5,32 +5,31 @@ import ImpactCard from "./ImpactCard";
 const ImpactComponent = () => {
   const impactCards = [
     {
-      Number: "1830+",
-      Description: "Scientists Trained",
+      Number: "100,000+",
+      Description: "Scientists & Students",
     },
     {
-      Number: "220",
+      Number: "15+",
       Description: "Partners",
     },
     {
-      Number: "10",
-      Description: "Partners",
+      Number: "16+",
+      Description: "African countries"
     },
     {
-      Number: "834+",
-      Description: "Graduates",
+      Number: "500+",
+      Description: "Students trained",
     },
   ];
   return (
     <div className="bg-primary w-full py-16 flex flex-col items-center justify-center">
       <SectionHeading Title="Our Impact" Bg="dark" />
       <p className="text-center w-1/2 mt-4 text-dimGray">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-        aliquam. Beatae dignissimos voluptate suscipit maiores aliquam dolor
-        asperiores atque quo amet qui libero magni, nemo exercitationem ipsam,
-        ex esse illum veritatis sequi expedita. Minus consequatur amet excepturi
-        sequi et error, ad fugit explicabo voluptas corporis tenetur provident
-        hic accusantium quisquam!
+      Since our establishment in 2020, we've empowered numerous scientists with essential skills in scientific research and entrepreneurship. Our expert-led workshops, such as "The Science and Business of Biotechnology" by &nbps;
+       <a href="https://be.mit.edu/directory/harvey-f-lodish" target="_blank" rel="noopener noreferrer">
+        Harvey Lodish
+      </a>, provide invaluable insights and knowledge to our participants.
+
       </p>
       <div className="w-full h-full mx-12 flex flex-col md:flex-row items-center justify-center gap-4 mt-8">
         {impactCards.map((card, index) => (
