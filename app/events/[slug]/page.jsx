@@ -11,8 +11,7 @@ import placeholder from "../../../public/person.png";
 import { Spinner } from "@/components/Spinner";
 
 const SingleEventPage = () => {
-  const {  getEventBySlug } =
-    useEventContext();
+  const { getEventBySlug } = useEventContext();
   const [individualEvent, setIndividualEvent] = useState(null);
   const [loading, setLoading] = useState(false);
 
@@ -28,7 +27,6 @@ const SingleEventPage = () => {
     fetchEventDetails();
     setLoading(false);
   }, [slug, getEventBySlug]);
-
   if (!individualEvent) {
     return (
       <div className="w-full h-screen">
@@ -70,6 +68,17 @@ const SingleEventPage = () => {
         <div className="col-span-2 flex flex-col px-16 py-4">
           <p className="text-xl text-primary  mb-4 font-bold ">Details</p>
           <p className="text-darkGray">{individualEvent?.details}</p>
+          <div className="py-4">
+            <Link href={individualEvent.banner} download>
+              <Image
+                src={individualEvent.banner}
+                width={650}
+                height={350}
+                alt="Event banner"
+                className="w-full h-auto"
+              />
+            </Link>
+          </div>
           <p className="text-xl text-primary my-4 font-bold ">Guests</p>
           <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
             {/* guest Items*/}

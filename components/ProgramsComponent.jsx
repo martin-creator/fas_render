@@ -7,6 +7,9 @@ import Program1 from "../public/program1.jpg";
 import fas_mentorship from "../public/fas_mentorship.png";
 import fas_asrb from "../public/fas_asrb.png";
 const ProgramsComponent = () => {
+   const handleClick = () => {
+     window.location.href = "/programs";
+   };
   return (
     <div className="flex flex-col items-center justify-center pt-8 pb-16">
       <SectionHeading Bg="light" Title="Our Programs" />
@@ -31,7 +34,7 @@ const ProgramsComponent = () => {
             virtual research labs and culminates in a capstone project, allowing
             participants to tackle real-world problems.
           </p>
-          <PrimaryButton Title="Learn More" />
+          <PrimaryButton ClickFunction={handleClick} Title="Learn More" />
         </div>
         {/* image */}
         <div className="col-span-1">
@@ -42,7 +45,8 @@ const ProgramsComponent = () => {
             alt="image of a black laboratory professional"
           />
           <p className="text-left text-sm  text-dark mt-8 mb-12">
-          Students at Gulu University after participating in our research bootcamp in 2022.
+            Students at Gulu University after participating in our research
+            bootcamp in 2022.
           </p>
         </div>
       </div>
@@ -56,25 +60,26 @@ const ProgramsComponent = () => {
             width={500}
             alt="image of a black laboratory professional"
           />
-         <p className="text-left text-sm  text-dark mt-8 mb-12">
-         Mentorship call with some scientists from  the Washington University in St. Louis
+          <p className="text-left text-sm  text-dark mt-8 mb-12">
+            Mentorship call with some scientists from the Washington University
+            in St. Louis
           </p>
         </div>
         <div className="col-span-1 flex justify-center flex-col">
           <h5 className="text-primary text-2xl font-bold flex-nowrap w-full">
-          African Scientist Mentorship Fellowship
+            African Scientist Mentorship Fellowship
           </h5>
           <div className="bg-secondary w-32 h-1 rounded-md mt-2" />
           <p className="text-left  text-darkerGray mt-8 mb-12">
-            The African Scientist Mentorship Fellowship (ASMF) is a six-month program
-            that pairs exceptional students with PhD candidates and experienced
-            scientists. Participants receive personalized career guidance,
-            collaborate on real-world research projects, and network with peers.
-            This program aims to bridge the gap between theoretical knowledge
-            and practical research skills, preparing you for a successful
-            scientific career.
+            The African Scientist Mentorship Fellowship (ASMF) is a six-month
+            program that pairs exceptional students with PhD candidates and
+            experienced scientists. Participants receive personalized career
+            guidance, collaborate on real-world research projects, and network
+            with peers. This program aims to bridge the gap between theoretical
+            knowledge and practical research skills, preparing you for a
+            successful scientific career.
           </p>
-          <PrimaryButton Title="Learn More" />
+          <PrimaryButton Title="Learn More" ClickFunction={handleClick} />
         </div>
       </div>
     </div>

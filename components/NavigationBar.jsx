@@ -100,8 +100,9 @@ const NavigationBar = () => {
         {/* Social Media */}
         <div className="hidden md:flex gap-4 text-tertiary ">
           {/* <BsInstagram className="text-animation-one" /> */}
-          <FaLinkedin className="text-animation-one" />
-          <RiTwitterXLine className="text-animation-one" />
+          <FaLinkedin className="text-animation-one" onClick={()=>{ window.location.href =
+            "https://www.linkedin.com/company/future-african-scientist";}} />
+          <RiTwitterXLine className="text-animation-one" onClick={()=>{ window.location.href = "https://x.com/FAS_2024";}} />
 
         </div>
         {/* Mobile Menu */}
