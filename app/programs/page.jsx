@@ -23,8 +23,15 @@ import mentorship from "../../public/mentorship.jpg";
 import fas_asel from "../../public/fas_asel.png";
 import fas_ment from "../../public/fas_ment.png";
 import { IoBriefcase } from "react-icons/io5";
+import VideoComponent from "@/components/VideoComponent";
 const Programs = () => {
   const [tabState, setTabState] = useState("research");
+  const handleRegisterClick = ({program}) => {
+    window.location.href = "https://forms.gle/BUNuVudUN4Z2sXjZ6";
+    // program === "research" ? window.open("https://forms.gle/7Q7Z9Q7Q7Q7Q7Q7Q7", "_blank") :
+    // window.open("https://forms.gle/BUNuVudUN4Z2sXjZ6", "_blank");
+  };
+
 
   const whyCardsResearchAcademy = [
     {
@@ -231,10 +238,11 @@ const Programs = () => {
                 alt="Image of student working in a lab"
               />
               <p className="text-left text-sm  text-dark mt-8 mb-12">
-          Students attending a class during the African Science Research Academy in 2022.
-          </p>
+                Students attending a class during the African Science Research
+                Academy in 2022.
+              </p>
             </div>
-            <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 grid-rows-2 w-full gap-8  py-16 px-16">
+            <div className="col-span-1 grid lg:h-[80%] grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-8  py-16 px-16">
               {whyCardsResearchAcademy.map((card, index) => (
                 <ProgramCard
                   key={index}
@@ -281,7 +289,12 @@ const Programs = () => {
               ))}
             </ol>
           </div>
-
+          <div className="flex flex-col items-center justify-center my-4 gap-4">
+            <SectionHeading Bg="light" Title="Program Testimonials" />
+            <VideoComponent
+              videoLink={"https://www.youtube.com/embed/vQeEgW8L21U"}
+            />
+          </div>
           {/* Eligibility Criteria */}
           <div className="w-full backgroundLight flex flex-col items-center justify-center py-8">
             <SectionHeading Bg="light" Title="Am I Eligible?" />
@@ -312,6 +325,7 @@ const Programs = () => {
           <CTAComponent
             SectionTitle={"Applications Closed"}
             ButtonTitle={"Register Interest"}
+            ClickFunction={()=>{handleRegisterClick("research")}}
             Message="Ready to kickstart your journey in scientific research and entrepreneurship? Complete the form. Join Africa's top young scientists and make a real difference!"
           />
         </div>
@@ -335,9 +349,9 @@ const Programs = () => {
                 alt="Image of student working in a lab"
               />
               <p className="text-left text-sm  text-dark mt-8 mb-12">
-              Mentorship call with some scientists from  the Washington University in St. Louis
+                Mentorship call with some scientists from the Washington
+                University in St. Louis
               </p>
-
             </div>
             <div className="col-span-1 grid grid-cols-1 md:grid-cols-2 grid-rows-2 w-full gap-8 p-16">
               {whyCardsMentorship.map((card, index) => (
@@ -383,6 +397,12 @@ const Programs = () => {
               ))}
             </ol>
           </div>
+          <div className="flex flex-col items-center justify-center my-4 gap-4">
+            <SectionHeading Bg="light" Title="Program Testimonials" />
+            <VideoComponent
+              videoLink={"https://www.youtube.com/embed/vQeEgW8L21U"}
+            />
+          </div>
           {/* Eligibility Criteria */}
           <div className="w-full backgroundLight flex flex-col items-center justify-center py-8">
             <SectionHeading Bg="light" Title="Am I Eligible?" />
@@ -413,6 +433,7 @@ const Programs = () => {
           <CTAComponent
             SectionTitle={"Applications Closed"}
             ButtonTitle={"Register Interest"}
+             ClickFunction={()=>{handleRegisterClick("mentorship")}}
             Message="Ready to kickstart your journey in scientific research and entrepreneurship? Complete the form. Join Africa's top young scientists and make a real difference!  "
           />
         </div>

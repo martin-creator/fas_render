@@ -19,6 +19,9 @@ const EventsPage = () => {
     const pastEvents = getPastEvents();
     setEventsForPast(pastEvents);
   }, [getPastEvents, getUpcomingEvents]);
+   const handleClick = () => {
+     window.location.href = "https://forms.gle/BUNuVudUN4Z2sXjZ6";
+   };
   return (
     <div>
       <div className="bg-primary sticky top-0 left-0 h-1/2 flex flex-col w-full">
@@ -30,15 +33,21 @@ const EventsPage = () => {
           <p className="text-5xl text-tertiary font-bold">Events</p>
         </div>
         <div className="w-[60%] text-center text-lightGray">
-          Events Join Future African Scientist's dynamic events to connect
-          with fellow innovators, gain insights from industry leaders, and
-          explore groundbreaking scientific advancements. Our events provide a
-          platform for knowledge exchange, networking, and collaboration,
-          ensuring that you stay at the forefront of science and technology in
-          Africa. Whether you’re attending workshops, conferences, or webinars,
-          you’ll find opportunities to grow, learn, and contribute to a vibrant
-          scientific community.
+          Events Join Future African Scientist's dynamic events to connect with
+          fellow innovators, gain insights from industry leaders, and explore
+          groundbreaking scientific advancements. Our events provide a platform
+          for knowledge exchange, networking, and collaboration, ensuring that
+          you stay at the forefront of science and technology in Africa. Whether
+          you’re attending workshops, conferences, or webinars, you’ll find
+          opportunities to grow, learn, and contribute to a vibrant scientific
+          community.
         </div>
+        <button
+          className="border border-white px-6 py-2 rounded-md text-white text-base hover:bg-tertiary hover:border-tertiary hover:scale-105 transition duration-300 ease-in-out"
+          onClick={handleClick}
+        >
+          Have an event suggestion? Let us know!
+        </button>
         <div className="text-tertiary text-lg flex gap-4 pb-16">
           <button
             onClick={() => {

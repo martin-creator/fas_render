@@ -20,6 +20,9 @@ import { ImLab } from "react-icons/im";
 import { BsShieldFillCheck } from "react-icons/bs";
 import PrimaryButton from "@/components/PrimaryButton";
 const about = () => {
+   const handleClick = () => {
+     window.location.href = "/contact";
+   };
   let impactStatements = [
     {
       figure: "10,000",
@@ -111,7 +114,7 @@ const about = () => {
             alt="Image of a male scientist examining samples"
           />
         </div>
-        <div className="flex flex-col md:grid grid-cols-2 px-16 md:px-32 mt-8">
+        <div className="flex flex-col md:grid gap-4 grid-cols-2 px-16 md:px-32 mt-8">
           {/* Our Vision */}
           <div className="col-span-1 flex flex-col items-center md:items-start">
             <SectionHeading Title={"Our Vision"} Bg="light" />
@@ -185,19 +188,26 @@ const about = () => {
             <SectionHeading Title={"Want to Support Our Mission?"} Bg="light" />
           </div>
           <div className="flex flex-col-reverse md:grid grid-cols-2 gap-4">
-            <div className="col-span-1 flex flex-col items-center justify-center">
-              <p className="text-darkerGray w-[80%] text-center mb-4">
-                Are you looking to extend training to a
-                group of exceptional scientists working in healthcare,
-                agriculture, and artificial intelligence? Do you want to help
-                establish research infrastructure to enable young scientists to
-                conduct groundbreaking research? Do you have job opportunities,
-                internships, or projects that you want to share with talented
-                young scientists in Africa? Contact us today to explore how we can collaborate and
-                support the next generation of African scientific leaders.
-              </p>
-              <div className="w-1/2 md:w-full flex items-center justify-center mb-16 md:mb-0">
-                <PrimaryButton Title="Contact Us" />
+            <div className="col-span-1 flex flex-col items-center justify-center px-8 gap-4">
+              <ul className="list-disc gap-4">
+                <li>
+                  Are you looking to extend training to a group of exceptional
+                  scientists working in healthcare, agriculture, and artificial
+                  intelligence?
+                </li>
+                <li>
+                  Do you want to help establish research infrastructure to
+                  enable young scientists to conduct groundbreaking research?
+                </li>
+                <li>
+                  Do you have job opportunities, internships, or projects that
+                  you want to share with talented young scientists in Africa?{" "}
+                </li>
+              </ul>
+              Contact us today to explore how we can collaborate and support the
+              next generation of African scientific leaders.
+              <div className="w-1/2 mt-8 md:w-full flex items-center justify-center mb-16 md:mb-0">
+                <PrimaryButton Title="Contact Us" ClickFunction={handleClick} />
               </div>
             </div>
             <div className="col-span-1  flex items-center justify-center mb-8">

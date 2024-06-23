@@ -1,8 +1,13 @@
+"use client"
 import Image from "next/image";
 import React from "react";
 import hero from "../public/heroImage.png";
 
 const HeroComponent = () => {
+  const handleClick = () => {
+    window.location.href = "/contact";
+  };
+
   return (
     <div className="absolute left-0 top-0 h-screen w-full">
       <Image
@@ -27,8 +32,10 @@ const HeroComponent = () => {
           <p className="text-center my-8 xl:my-12 text-white text-xl xl:text-2xl">
             Fostering the next generation of African scientists and engineers
           </p>
-          <button className="border border-white px-6 py-4 uppercase rounded-md text-white text-base">
-            {" "}
+          <button
+            className="border border-white px-6 py-4 uppercase rounded-md text-white text-base hover:bg-tertiary hover:border-tertiary hover:scale-105 transition duration-300 ease-in-out"
+            onClick={handleClick}
+          >
             Work with us
           </button>
         </div>

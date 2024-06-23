@@ -14,7 +14,7 @@ export default function Home() {
     <main className="bg-backgroundLight relative">
       <NavigationBar />
       <HeroComponent />
-      <div className="mt-[500px] lg:mt-[700px] 2xl:mt-[900px]">
+      <div className="mt-[780px] md:mt-[1100px] lg:mt-[650px] 2xl:mt-[900px]">
         <AboutComponent />
         <ImpactComponent />
         <ProgramsComponent />
