@@ -33,7 +33,7 @@ const EventsPage = () => {
           <p className="text-5xl text-tertiary font-bold">Events</p>
         </div>
         <div className="w-[60%] text-center text-lightGray">
-          Events Join Future African Scientist's dynamic events to connect with
+          Join Future African Scientist's dynamic events to connect with
           fellow innovators, gain insights from industry leaders, and explore
           groundbreaking scientific advancements. Our events provide a platform
           for knowledge exchange, networking, and collaboration, ensuring that
