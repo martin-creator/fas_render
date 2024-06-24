@@ -415,7 +415,7 @@ const TeamPage = () => {
         {tabState === "advisors" && (
           <div>
             <div className="bg-backgroundLight flex flex-col items-center justify-center pt-8">
-              <SectionHeading Title=" Past Course Facilitators" Bg="light" />
+              <SectionHeading Title=" Advisors" Bg="light" />
               {/* <p className="text-center w-[80%] md:w-1/2 mt-4 text-dimGray">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Provident, aliquam. Beatae dignissimos voluptate suscipit
@@ -589,7 +589,7 @@ const TeamPage = () => {
         {tabState === "facilitators" && (
           <div>
             <div className="bg-backgroundLight flex flex-col items-center justify-center pt-8">
-              <SectionHeading Title=" Past Course Facilitators" Bg="light" />
+              <SectionHeading Title=" Past" Bg="light" />
               {/* <p className="text-center w-[80%] md:w-1/2 mt-4 text-dimGray">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Provident, aliquam. Beatae dignissimos voluptate suscipit
