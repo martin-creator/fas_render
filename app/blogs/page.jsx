@@ -67,14 +67,24 @@ const BlogsPage = async () => {
           <p className="text-5xl text-tertiary font-bold">Our Blogs</p>
         </div>
         <div className="w-[60%] text-center text-lightGray">
-        Dive into a wealth of knowledge with our blog, where we explore everything from cutting-edge medical research and innovative health tech to practical advice on surgery, pediatrics, and mental health. Discover how science and entrepreneurship are transforming Africa and beyond.
+          Dive into a wealth of knowledge with our blog, where we explore
+          everything from cutting-edge medical research and innovative health
+          tech to practical advice on surgery, pediatrics, and mental health.
+          Discover how science and entrepreneurship are transforming Africa and
+          beyond.
         </div>
-        <button className="border border-tertiary mb-8 bg-transparent hover:bg-tertiary text-tertiary hover:text-primary py-2 px-4 rounded-md hover:scale-110 transition duration-300 ease-in-out">
+        <a
+          href={"https://forms.gle/BUNuVudUN4Z2sXjZ6"}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="border border-tertiary mb-8 bg-transparent hover:bg-tertiary text-tertiary hover:text-primary py-2 px-4 rounded-md hover:scale-110 transition duration-300 ease-in-out"
+        >
           Have a blog idea? Submit it here!
-        </button>
+        </a>
+     
       </div>
       {/* tags */}
-      <div className="py-8 px-8 flex overflow-x-auto justify-center items-center bg-backgroundLight w-full">
+      <div className="p-8 flex overflow-x-auto justify-center items-center bg-backgroundLight w-full">
         {tags.map((tag) => (
           <Link
             href={`blogs/tag/${tag.slug.current}`}
