@@ -268,7 +268,7 @@ const Programs = () => {
               {programTimelineItems.map((item, index) => (
                 <li key={index} className="relative mb-6 sm:mb-0">
                   <div className="flex items-center">
-                    <div className="z-10 *:flex items-center justify-center w-10 h-10 md:w-6 md:h-6 bg-secondary rounded-full ring-0 ring-secondary dark:tertiary sm:ring-8 dark:tertiary shrink-0 text-primary">
+                    <div className="z-10 flex items-center justify-center w-10 h-10 md:w-6 md:h-6 bg-secondary rounded-full ring-0 ring-secondary dark:tertiary sm:ring-8 dark:tertiary shrink-0 text-primary">
                       {item.Icon}
                     </div>
                     {/* <div className="hidden sm:flex w-full bg-backgroundLight h-0.5  dark:bg-gray-700"></div> */}

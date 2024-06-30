@@ -69,15 +69,22 @@ const SingleEventPage = () => {
           <p className="text-xl text-primary  mb-4 font-bold ">Details</p>
           <p className="text-darkGray">{individualEvent?.details}</p>
           <div className="py-4">
-            <Link href={individualEvent.banner} download>
-              <Image
-                src={individualEvent.banner}
-                width={650}
-                height={350}
-                alt="Event banner"
-                className="w-full h-auto"
-              />
-            </Link>
+            {/* <Link href={individualEvent.banner} download> */}
+            <Image
+              src={individualEvent.banner}
+              width={650}
+              height={350}
+              alt="Event banner"
+              className="w-full h-auto"
+            />
+            <a
+              href={individualEvent.banner}
+              download="event_poster.png"
+              className="inline-block px-4 py-2 mt-4 text-primary hover:text-white border border-primary rounded-md bg-white hover:bg-primary transition duration-300 ease-in-out"
+            >
+              Download Poster
+            </a>
+            {/* </Link> */}
           </div>
           <p className="text-xl text-primary my-4 font-bold ">Guests</p>
           <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
