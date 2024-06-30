@@ -20,7 +20,7 @@ const HeroComponent = () => {
         {/* Hero Content  a top p tag with small text */}
         
         <div className="w-full h-full flex flex-col items-center justify-center mt-8">
-        <p className="text-white text-sm md:text-lg mb-8">
+        <p className="text-center text-white text-sm  mb-8">
           A multidisciplinary community of doers, thinkers, and innovators
           </p>
           <h2 className="uppercase text-tertiary text-4xl sm:text-6xl md:text-[70px] xl:text-[88px] 2xl:text-[100px] font-extrabold text-center">
