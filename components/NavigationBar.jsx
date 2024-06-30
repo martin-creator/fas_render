@@ -42,6 +42,10 @@ const NavigationBar = () => {
       title: "Contact",
       link: "/contact",
     },
+    {
+      title: "Careers",
+      link: "/careers",
+    },
   ];
 
   const pathname = usePathname();
