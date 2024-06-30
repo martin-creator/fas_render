@@ -40,7 +40,7 @@ const TestimonialsComponent = () => {
       university: "University of Gambia",
       description:
         "I just took up a position as National Officer of Research Exchange when I saw the flyer for this program. I didn't hesitate to apply because I knew I needed any more knowledge on research, but I found more than expected. It was knowledge coupled with experience. The synchronous courses offered taught me that research could be made easy for anyone interested, and there is much more we could do to promote Research in our African region. Thanks to ASRB I will be leading my team this tenure with an array of ideas and topics on Research and masterclass, and the confidence to even get our first research project.",
-      country: "UG",
+      country: "GM",
       imageUrl: "/teamImg/hadiza_tst.png",
     },
     {
@@ -50,14 +50,6 @@ const TestimonialsComponent = () => {
         "Joining this program proved vital to my research journey. I was a novice myself but after the training sessions and the iBiology courses paired with the capstone project, I can confidently carry out a project now. Straight from inception to publishing. The networks you build from this place are invaluable since there's a pool of people with common interests drawn from all over Africa. For the training sessions we have prodigies in their respective fields, so if you are keen on the program then there's only one way – up.",
       country: "KE",
       imageUrl: "/teamImg/janice_tst.png",
-    },
-    {
-      name: "HADIZA MARIAM SESAY - ASRB 2022",
-      university: "University of Gambia",
-      description:
-        "I just took up a position as National Officer of Research Exchange when I saw the flyer for this program. I didn't hesitate to apply because I knew I needed any more knowledge on research, but I found more than expected. It was knowledge coupled with experience. The synchronous courses offered taught me that research could be made easy for anyone interested, and there is much more we could do to promote Research in our African region. Thanks to ASRB I will be leading my team this tenure with an array of ideas and topics on Research and masterclass, and the confidence to even get our first research project.",
-      country: "UG",
-      imageUrl: "/teamImg/hadiza_tst.png",
     },
   ];
   return (
