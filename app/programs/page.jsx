@@ -27,7 +27,7 @@ import VideoComponent from "@/components/VideoComponent";
 const Programs = () => {
   const [tabState, setTabState] = useState("research");
   const handleRegisterClick = ({program}) => {
-    window.location.href = "https://forms.gle/BUNuVudUN4Z2sXjZ6";
+    window.location.href = "https://forms.gle/UjJkfsNKcxnVSo6D6";
     // program === "research" ? window.open("https://forms.gle/7Q7Z9Q7Q7Q7Q7Q7Q7", "_blank") :
     // window.open("https://forms.gle/BUNuVudUN4Z2sXjZ6", "_blank");
   };
@@ -291,9 +291,7 @@ const Programs = () => {
           </div>
           <div className="flex flex-col items-center justify-center my-4 gap-4">
             <SectionHeading Bg="light" Title="Program Testimonials" />
-            <VideoComponent
-              videoLink={"https://www.youtube.com/embed/vQeEgW8L21U"}
-            />
+            <VideoComponent videoLink={"https://www.youtube.com/embed/MxwYjm973CA"} />
           </div>
           {/* Eligibility Criteria */}
           <div className="w-full backgroundLight flex flex-col items-center justify-center py-8">
@@ -399,9 +397,7 @@ const Programs = () => {
           </div>
           <div className="flex flex-col items-center justify-center my-4 gap-4">
             <SectionHeading Bg="light" Title="Program Testimonials" />
-            <VideoComponent
-              videoLink={"https://www.youtube.com/embed/vQeEgW8L21U"}
-            />
+            <VideoComponent videoLink={"https://www.youtube.com/embed/MxwYjm973CA"} />
           </div>
           {/* Eligibility Criteria */}
           <div className="w-full backgroundLight flex flex-col items-center justify-center py-8">
