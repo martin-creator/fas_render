@@ -20,7 +20,7 @@ const EventsPage = () => {
     setEventsForPast(pastEvents);
   }, [getPastEvents, getUpcomingEvents]);
    const handleClick = () => {
-     window.location.href = "https://forms.gle/BUNuVudUN4Z2sXjZ6";
+     window.location.href = "https://forms.gle/eANfY4Eqp6WjoArq9";
    };
   return (
     <div>
