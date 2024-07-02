@@ -19,10 +19,27 @@ async function getJobsByTag(tag) {
       }
     }
   `;
-
   const jobs = await client.fetch(query);
   return jobs;
 }
+
+
+// async function getAllTags() {
+//   const query = `
+//     *[_type == "jobTag"]{
+//       slug
+//     }
+//   `;
+//   const tags = await client.fetch(query);
+//   return tags.map(tag => ({ slug: tag.slug.current }));
+// }
+
+// export async function generateStaticParams() {
+//   const tags = await getAllTags();
+//   return tags.map(tag => ({ params: { slug: tag.slug } }));
+// }
+
+
 
 const TagsPage = async ({ params }) => {
   const jobs = await getJobsByTag(params.slug);
@@ -98,3 +115,5 @@ const TagsPage = async ({ params }) => {
 };
 
 export default TagsPage;
+
+
