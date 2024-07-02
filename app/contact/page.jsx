@@ -16,43 +16,43 @@ const ContactUs = () => {
       title: "Partnerships",
       icon: <FaHandshakeAngle size={40} />,
       description:
-        "Partner with Future African Scientist to foster innovation, support young scientists, and create impactful research collaborations. Connect with us to make a lasting impact in science and technology",
-      url: "example.com",
+        "Partner with Future African Scientist to foster innovation, support young scientists, and create impactful research collaborations.",
+      url: "https://forms.gle/iDbRV43HPxdBTfHi7",
     },
     {
       title: "Donations",
       icon: <FaHandHoldingHeart size={40} />,
       description:
         "Support the next generation of African scientists through your generous donations. Your contributions help provide the resources and opportunities they need to excel",
-      url: "example.com",
+      url: "https://forms.gle/iDbRV43HPxdBTfHi7",
     },
     {
       title: "Events",
       icon: <FaCalendarCheck size={40} />,
       description:
         "Participate in our events to network with industry leaders, gain valuable insights, and stay ahead in the scientific community. Join us in shaping the future of science in Africa",
-      url: "example.com",
+      url: "https://forms.gle/iDbRV43HPxdBTfHi7",
     },
     {
       title: "Jobs/Internships",
       icon: <FaBriefcase size={40} />,
       description:
         "Are you an organization with job or internship opportunities for young scientists? Partner with us to connect with talented individuals eager to contribute to your projects and grow in their careers",
-      url: "example.com",
+      url: "https://forms.gle/iDbRV43HPxdBTfHi7",
     },
     {
       title: "Research & Skills Development",
       icon: <FaQuestionCircle size={40} />,
       description:
         "Is your organization looking to train and develop African scientists? Collaborate with us to provide cutting-edge research opportunities and essential skills training",
-      url: "example.com",
+      url: "https://forms.gle/iDbRV43HPxdBTfHi7",
     },
     {
       title: "Other Queries",
       icon: <FaQuestionCircle size={40} />,
       description:
         "Have questions or need more information? Reach out to us for any inquiries. We're here to assist and provide the information you need",
-      url: "example.com",
+      url: "https://forms.gle/iDbRV43HPxdBTfHi7",
     },
   ];
   return (
