@@ -78,14 +78,14 @@ const TeamPage = () => {
       linkedin: "https://www.linkedin.com/in/john-doe/",
       twitter: "https://twitter.com/johndoe",
     },
-    {
-      name: "Teng-Leong Chew",
-      position: "Director of Advanced Imaging at Janelia",
-      bio: "After obtaining a BS in Biochemistry at the University of Wisconsin-Madison, Chew went to St. Louis University to pursue his PhD, where he worked to understand the role of myosin II regulation in endothelial cells. Realizing that conventional biochemical methods could not address the spatial and temporal regulation of signaling pathways inside the cell, Chew embarked on his postdoctoral research in the laboratory of Rex Chisholm by developing fluorescent biosensor to simultaneously monitor the enzymatic activity and localization pattern of myosin light chain kinase in vivo. In 2002, Chew became the director of the Center for Advanced Microscopy at Feinberg School of Medicine, Northwestern University in 2002, and led the facility to be recognized as one of the few selected Nikon Imaging Centers of Excellence in the world. At the same time, his lab began devising methods to engineer three-dimensional, lumenized vascular network capable of dynamic signaling read-out. This approach ultimately allowed Chew and his team to dissect the regulatory signals in the opposing endothelial cells during active tumor diapedesis – providing a rare glimpse into the signaling cascade during tumor invasion, not from the perspective of the cancer cell, but from the underlying endothelium. In 2009, Chew was further appointed to the position of Director for University Imaging Resources at Northwestern, overseeing the overarching strategy in building integrated imaging infrastructure across all seven imaging centers and cores within the university.",
-      img: "/teamImg/leong.png",
-      linkedin: "https://www.linkedin.com/in/john-doe/",
-      twitter: "https://twitter.com/johndoe",
-    },
+    // {
+    //   name: "Teng-Leong Chew",
+    //   position: "Director of Advanced Imaging at Janelia",
+    //   bio: "After obtaining a BS in Biochemistry at the University of Wisconsin-Madison, Chew went to St. Louis University to pursue his PhD, where he worked to understand the role of myosin II regulation in endothelial cells. Realizing that conventional biochemical methods could not address the spatial and temporal regulation of signaling pathways inside the cell, Chew embarked on his postdoctoral research in the laboratory of Rex Chisholm by developing fluorescent biosensor to simultaneously monitor the enzymatic activity and localization pattern of myosin light chain kinase in vivo. In 2002, Chew became the director of the Center for Advanced Microscopy at Feinberg School of Medicine, Northwestern University in 2002, and led the facility to be recognized as one of the few selected Nikon Imaging Centers of Excellence in the world. At the same time, his lab began devising methods to engineer three-dimensional, lumenized vascular network capable of dynamic signaling read-out. This approach ultimately allowed Chew and his team to dissect the regulatory signals in the opposing endothelial cells during active tumor diapedesis – providing a rare glimpse into the signaling cascade during tumor invasion, not from the perspective of the cancer cell, but from the underlying endothelium. In 2009, Chew was further appointed to the position of Director for University Imaging Resources at Northwestern, overseeing the overarching strategy in building integrated imaging infrastructure across all seven imaging centers and cores within the university.",
+    //   img: "/teamImg/leong.png",
+    //   linkedin: "https://www.linkedin.com/in/john-doe/",
+    //   twitter: "https://twitter.com/johndoe",
+    // },
     {
       name: "Thi Nguyen",
       position: "Educator and Storytelling Coach for scientists",
