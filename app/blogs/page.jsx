@@ -74,7 +74,7 @@ const BlogsPage = async () => {
           beyond.
         </div>
         <a
-          href={"https://forms.gle/BUNuVudUN4Z2sXjZ6"}
+          href={"https://forms.gle/NxcB9MLUWHrQ4eWZ8"}
           target="_blank"
           rel="noopener noreferrer"
           className="border border-tertiary mb-8 bg-transparent hover:bg-tertiary text-tertiary hover:text-primary py-2 px-4 rounded-md hover:scale-110 transition duration-300 ease-in-out"
