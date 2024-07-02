@@ -1,6 +1,7 @@
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { EventContextProvider } from "@/context/eventContext";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const dmSans = DM_Sans({
   weight: "400",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       <body className={dmSans.className}>
         {/* {children} */}
         <EventContextProvider> {children}</EventContextProvider>
+        <SpeedInsights/>
       </body>
     </html>
   );
