@@ -10,6 +10,23 @@ import { FaCalendarDay, FaLinkedin, FaLocationDot } from "react-icons/fa6";
 import placeholder from "../../../public/person.png";
 import { Spinner } from "@/components/Spinner";
 
+
+// async function getAllEventSlugs() {
+//   const query = `
+//   *[_type == "event"] {
+//     "slug": slug.current
+//   }
+//   `;
+//   const events = await client.fetch(query);
+//   return events;
+// }
+
+// export async function generateStaticParams() {
+//   const slugs = await getAllEventSlugs();
+//   return slugs.map(({ slug }) => ({ slug }));
+// }
+
+
 const SingleEventPage = () => {
   const { getEventBySlug } = useEventContext();
   const [individualEvent, setIndividualEvent] = useState(null);
