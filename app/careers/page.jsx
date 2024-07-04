@@ -142,26 +142,26 @@ return (
       </ol>
 
       {/* positions */}
-      <div className="p-8 flex justify-center items-center flex-col">
+      <div className="flex justify-center items-center flex-col w-full">
         <SectionHeading Title="Open Positions" Bg="light" />
         <p className="text-center w-[80%] md:w-1/2 mt-4 text-dimGray pb-8">
           We are currently hiring for the following positions. Click on the
           position to learn more and apply.
         </p>
         {/* tags */}
-        <div className="p-8 flex overflow-auto justify-center items-center  w-full">
+        <div className="p-2 md:p-8 flex overflow-x-auto justify-start items-center w-full ">
           {tags.map((tag) => (
             <Link
               href={`/careers/tag/${tag.slug?.current}`}
               key={tag._id}
-              className="text-sm flex-nowrap hover:bg-primary transition duration-300 ease-in-out cursor-pointer hover:text-white hover:border-primary border rounded-md border-lightGray border-opacity-40 text-tertiary font-bold px-2 py-1 mr-2"
+              className="text-sm flex-shrink-0 hover:bg-primary transition duration-300 ease-in-out cursor-pointer hover:text-white hover:border-primary border rounded-md border-lightGray border-opacity-40 text-tertiary font-bold px-2 py-1 mr-2"
             >
               {tag.name} ({tag.jobCount})
             </Link>
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-12">
           {jobs.map((job) => (
             <div
               className="bg-backgroundLight p-8 mx-4 md:mx-0 rounded-md cursor-pointer hover:shadow-md duration-300 ease-in-out"
