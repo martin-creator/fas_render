@@ -96,7 +96,7 @@ const BlogsPage = async () => {
         ))}
       </div>
       {/* blog sect */}
-      <div className="px-8 grid grid-cols-1 bg-backgroundLight md:grid-cols-2 lg:grid-cols-3 gap-8 pt-4 pb-16">
+      <div className="px-10  grid grid-cols-1 bg-backgroundLight md:grid-cols-2 lg:grid-cols-3 gap-8 pt-4 pb-16">
         {blogs.map((blog) => (
           <BlogCardComponent
             key={blog.id}
