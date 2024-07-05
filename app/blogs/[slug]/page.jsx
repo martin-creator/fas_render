@@ -46,7 +46,7 @@ const IndividualBlogPage = async ({ params }) => {
       {/* hero sect */}
       <div className="bg-primary h-1/2 flex flex-col items-center gap-8 justify-center first:w-full">
         <div className="flex w-full justify-center pt-12">
-          <p className="text-5xl text-tertiary font-bold text-center">
+          <p className="text-5xl text-tertiary font-bold text-center px-16">
             {blog?.title}
           </p>
         </div>
@@ -62,7 +62,7 @@ const IndividualBlogPage = async ({ params }) => {
         </div>
       </div>
       {/* body */}
-      <div className="flex flex-col mt-16 justify-center items-center">
+      <div className="flex flex-col mt-16 justify-center items-center px-16">
         <Image src={blog.banner} width={600} height={400} alt="blog image" />
         <div className={richTextStyles}>
           <PortableText
@@ -109,12 +109,13 @@ export default IndividualBlogPage;
 
 const richTextStyles = `
 mt-14
+leading-relaxed
 text-justify
 max-w-2xl
 m-auto
-prose-headings:my-5
+prose-headings:my-8
 prose-heading:text-2xl
-prose-p:mb-5
+prose-p:mb-8
 prose-p:leading-7
 prose-li:list-disc
 prose-li:leading-7
