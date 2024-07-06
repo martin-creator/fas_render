@@ -291,7 +291,7 @@ const Programs = () => {
           </div>
           <div className="flex flex-col items-center justify-center my-4 gap-4">
             <SectionHeading Bg="light" Title="Program Testimonials" />
-            <VideoComponent videoLink={"https://www.youtube.com/embed/MxwYjm973CA"} />
+            <VideoComponent videoLink={"https://www.youtube.com/embed/jiWgeYsrZ9c"} />
           </div>
           {/* Eligibility Criteria */}
           <div className="w-full backgroundLight flex flex-col items-center justify-center py-8">
