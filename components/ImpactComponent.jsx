@@ -25,9 +25,9 @@ const ImpactComponent = () => {
     <div className="bg-primary w-full py-16 flex flex-col items-center justify-center">
       <SectionHeading Title="Our Impact" Bg="dark" />
       <p className="text-center w-1/2 mt-4 text-dimGray">
-      Since our establishment in 2020, we've empowered numerous scientists with essential skills in scientific research and entrepreneurship. Our expert-led workshops, such as "The Science and Business of Biotechnology" by &nbps;
+      Since our establishment in 2020, we've empowered numerous scientists with essential skills in scientific research and entrepreneurship. Our expert-led workshops, such as "The Science and Business of Biotechnology" by 
        <a href="https://be.mit.edu/directory/harvey-f-lodish" target="_blank" rel="noopener noreferrer">
-        Harvey Lodish
+        Professor Harvey Lodish
       </a>, provide invaluable insights and knowledge to our participants.
 
       </p>
