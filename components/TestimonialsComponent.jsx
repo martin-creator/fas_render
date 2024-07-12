@@ -104,10 +104,12 @@ const TestimonialsComponent = () => {
           ))}
         </Carousel>
       </div>
-      <SectionHeading Bg="light" Title="Numbu's Journey with Future African Scientist" />{" "}
-      <VideoComponent videoLink={"https://www.youtube.com/embed/MxwYjm973CA"} />
+      <SectionHeading Bg="light" Title="Hajer's Journey with Future African Scientist" />{" "}
+      <VideoComponent videoLink={"https://www.youtube.com/embed/SOOtoAInrcE"} />
     </div>
   );
 };
 
 export default TestimonialsComponent;
+
+
