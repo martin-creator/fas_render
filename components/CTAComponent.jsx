@@ -9,6 +9,9 @@ const CTAComponent = ({
   ButtonTitle,
   ClickFunction,
 }) => {
+  const handleClick = () => {
+    window.location.href = "/contact";
+  };
   return (
     <div className="flex flex-col items-center justify-center pt-8 pb-16 bg-secondary">
       <SectionHeading Bg={"light"} Title={SectionTitle} />
@@ -16,7 +19,7 @@ const CTAComponent = ({
         {Message}
       </p>
       <div className="w-1/2 flex justify-center">
-        <PrimaryButton Title={ButtonTitle} ClickFunction={ClickFunction} />
+        <PrimaryButton Title={ButtonTitle} ClickFunction={handleClick} />
       </div>
     </div>
   );
