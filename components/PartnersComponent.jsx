@@ -27,8 +27,8 @@ const PartnersComponent = () => {
           <Image className="w-32 h-32" src={agriclub} alt="agriclub logo" />
           <Image className="w-28 h-28" src={emsa} alt="emsa logo" />
           <Image className="w-36 h-36" src={gambia} alt="gambia logo" />
-          <Image className="w-36 h-36" src={mbarara} alt="mbarara logo" />
-          <Image className="w-36 h-36" src={nigeria} alt="nigeria logo" />
+          {/* <Image className="w-36 h-36" src={mbarara} alt="mbarara logo" /> */}
+          {/* <Image className="w-36 h-36" src={nigeria} alt="nigeria logo" /> */}
           <Image className="w-36 h-36" src={tamsa} alt="tamsa logo" />
           <Image className="w-28 h-28" src={uganda} alt="uganda logo" />
         </div>
