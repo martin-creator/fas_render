@@ -21,6 +21,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+      <title>{metadata.title}</title>
+      <meta name="description" content="Future African Scientist is a non-profit organization that fosters the next generation of African scientists and engineers." />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#000000" />
+      <meta property="og:title" content="Future African Scientist" />
+      <meta property="og:description" content="Fostering the next generation of African scientists and engineers" />
+      <meta property="og:image" content="public/favicon.ico" />
         <link
           rel="icon"
           href="public/favicon.ico"
