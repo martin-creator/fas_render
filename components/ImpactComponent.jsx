@@ -6,7 +6,7 @@ const ImpactComponent = () => {
   const impactCards = [
     {
       Number: "100,000+",
-      Description: "Scientists & Students",
+      Description: "Scientists & Students in our network",
     },
     {
       Number: "15+",
