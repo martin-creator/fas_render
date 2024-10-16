@@ -129,6 +129,15 @@ const TeamPage = () => {
       linkedin: "https://www.linkedin.com/in/john-doe/",
       twitter: "https://twitter.com/johndoe",
     },
+    {
+      name: "Martin Spitaler,",
+      position:
+        "Head of the Imaging Facility at MPIB",
+      bio: "Martin studied cell and molecular biology at the University of Innsbruck, Austria, and did a PhD on cellular signaling in multidrug resistance of cancer cells. During his postdoc at Cancer Research UK / London Research Institute and at the University of Dundee in Scotland, he moved into microscopy, studying changes in signal organization in the immunological synapse when T cells are activated by antigen-presenting cells. Applying his microscopy experience and passion, in 2006 he took up the challenge to build up and manage a core facility for light microscopy at Imperial College London, UK, and later moved to Munich in Germany (2014) to head the facility for imaging and flow cytometry at the Max Planck Institute of Biochemistry. Outside the institute, Martin is also heavily engaged in microscopy networks, as a founding member of the UK Bioimaging network, Max Planck Bioimaging, and most recently the international initiative for 'Quality Assessment and Reproducibility for Instruments & Images in Light Microscopy' (QUAREP). Besides microscopy, Martin has also been ombudsperson for Good Scientific Practice at the institute since 2018, which involves training, advice, and support for all scientists regarding good scientific practice, and being the first point of reference in any cases of suspected misconduct. He is also involved in the national community of ombudspersons, with a special interest in the supervision of young scientists and the prevention of power abuse.",
+      img: "/teamImg/martin_s.png",
+      linkedin: "https://www.linkedin.com/in/john-doe/",
+      twitter: "https://twitter.com/johndoe",
+    },
   ];
   const facilitatorsTeam = [
     {
