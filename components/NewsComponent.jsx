@@ -7,10 +7,8 @@ import science_boston from "../public/partnerlogos/science_boston.png"
 import Image from "next/image";
 
 const NewsComponent = () => {
-  return (
     <div className="bg-primary w-full pt-12 flex flex-col items-center justify-center">
-      {/* <Image className="w-32 h-auto mb-4" src={newsLogo} alt="News Website Logo" /> */}
-      <SectionHeading Title="Future African Scientist in the News" Bg="dark" />
+      <SectionHeading Title="In the News" Bg="dark" />
       <p className="text-center w-[80%] md:w-1/2 mt-4 text-dimGray pb-8">
       Stay updated with the latest articles and features showcasing the impactful work of Future African Scientist (FAS). Explore how various institutions and websites highlight our projects, research, and contributions to advancing science and technology in Africa and beyond.
       </p>
