@@ -7,6 +7,7 @@ import science_boston from "../public/partnerlogos/science_boston.png"
 import Image from "next/image";
 
 const NewsComponent = () => {
+  return (
     <div className="bg-primary w-full pt-12 flex flex-col items-center justify-center">
       <SectionHeading Title="In the News" Bg="dark" />
       <p className="text-center w-[80%] md:w-1/2 mt-4 text-dimGray pb-8">
